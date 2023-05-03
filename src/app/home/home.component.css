@@ -17,3 +17,17 @@
 .about-me {
     font-size: 1.75vw;
 }
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 8vw;
+    transition: 0.5s;
+}
+
+figure img:hover {
+    transform: translateY(-5%);
+    transition: 0.5s;
+}
