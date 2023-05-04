@@ -27,4 +27,20 @@ export class HomeComponent {
     { fileName: "android-studio", name: "Android Studio"}
   ];
 
+  projects = [
+    { 
+      title: "Authentication System", 
+      tech: ["angular", "bootstrap", "java", "spring-boot", "azure"],
+      description: `Designed a responsive web application that redirects the user 
+                    to the appropriate landing page given specific login credentials.`,
+      url: "CSTyyCap/AuthenticationSystem"
+    }, 
+    { 
+      title: "Library Management System",
+      tech: ["angular", "bootstrap", "java", "spring-boot"],
+      description: `Created a dynamic web application that allows the user to 
+                    manage books in a virtual library environment`,
+      url: "NGT-Project-Team-B/Library-Management-System"
+    }
+  ];
 }

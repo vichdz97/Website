@@ -56,47 +56,20 @@
         <h2>My Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="col box">
-                    <h4>Project 1</h4>
-                    <h6>
-                        Technologies Used: 
-                        <span class="text-primary">Tech 1</span>, 
-                        <span class="text-primary">Tech 2</span>,
-                        <span class="text-primary">Tech 3</span>
+                <div class="col box" *ngFor="let proj of projects">
+                    <h4>{{ proj.title }}</h4>
+                    <h6 class="d-flex align-items-center">
+                        Technologies Used:
+                        <div *ngFor="let techName of proj.tech">
+                            <img src="assets/logos/{{techName}}.svg" alt="Tech logo" class="tech-used">
+                        </div>
                     </h6>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Pellentesque mattis vel lorem vestibulum consequat. 
-                        Nulla convallis sollicitudin molestie. 
-                        Fusce euismod purus mi, sed convallis velit facilisis at. 
-                        Integer volutpat risus eu massa dignissim, non iaculis mauris 
-                        pellentesque. Nulla arcu arcu, scelerisque eget fermentum sed, 
-                        accumsan eget tortor. Nullam ut felis a dolor venenatis sagittis 
-                        ut non leo. Suspendisse commodo nulla a est laoreet hendrerit. 
-                        Sed in tortor auctor, vulputate sem vel, ornare velit. 
-                        Ut et scelerisque diam.
-                    </p>
-                </div>
-                <div class="col box">
-                    <h4>Project 2</h4>
-                    <h6>
-                        Technologies Used: 
-                        <span class="text-primary">Tech 1</span>, 
-                        <span class="text-primary">Tech 2</span>,
-                        <span class="text-primary">Tech 3</span>
-                    </h6>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Pellentesque mattis vel lorem vestibulum consequat. 
-                        Nulla convallis sollicitudin molestie. 
-                        Fusce euismod purus mi, sed convallis velit facilisis at. 
-                        Integer volutpat risus eu massa dignissim, non iaculis mauris 
-                        pellentesque. Nulla arcu arcu, scelerisque eget fermentum sed, 
-                        accumsan eget tortor. Nullam ut felis a dolor venenatis sagittis 
-                        ut non leo. Suspendisse commodo nulla a est laoreet hendrerit. 
-                        Sed in tortor auctor, vulputate sem vel, ornare velit. 
-                        Ut et scelerisque diam.
-                    </p>
+                    <p>{{ proj.description }}</p>
+                    <div class="d-flex justify-content-end align-items-center">
+                        <a href="#" class="text-primary">Live</a>
+                        <span class="mx-3">|</span>
+                        <a href="https://github.com/{{proj.url}}" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
