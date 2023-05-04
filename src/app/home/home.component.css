@@ -41,3 +41,32 @@ figure img:hover {
     transform: translateY(-5%);
     transition: 0.5s;
 }
+
+.projects {
+    margin-bottom: 15vw;
+}
+
+.box {
+    min-width: 500px;
+    max-width: 960px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px lightgray;
+    margin: 2vw;
+    padding: 2vw;
+    transition: 0.5s;
+}
+
+.box:hover {
+    box-shadow: 10px 10px 20px lightgray;
+    transition: 0.5s;
+}
+
+.view-more {
+    transition: 0.3s;
+}
+
+.view-more:hover {
+    cursor: pointer;
+    color: gray;
+    transition: 0.3s;
+}
