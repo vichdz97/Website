@@ -56,8 +56,9 @@
         <h2>My Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="col box" *ngFor="let proj of projects">
+                <div class="col box bg-light" *ngFor="let proj of projects">
                     <h4>{{ proj.title }}</h4>
+                    <img src="assets/images/{{proj.img}}" alt="Screenshot of project" class="screenshot my-3">
                     <h6 class="d-flex align-items-center">
                         Technologies Used:
                         <div *ngFor="let techName of proj.tech">
@@ -66,8 +67,7 @@
                     </h6>
                     <p>{{ proj.description }}</p>
                     <div class="d-flex justify-content-end align-items-center">
-                        <a href="#" class="text-primary">Live</a>
-                        <span class="mx-3">|</span>
+                        <a href="#" target="_blank"><i class="bi bi-globe2 mx-3"></i></a>
                         <a href="https://github.com/{{proj.url}}" target="_blank"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
