@@ -1,6 +1,6 @@
 .summary {
     max-width: 960px;
-    margin: 15vw auto 20vw;
+    margin: 17vw auto 20vw;
 }
 
 #headshot {
@@ -47,7 +47,7 @@ figure img:hover {
 }
 
 .projects {
-    margin-bottom: 15vw;
+    margin-bottom: 10vw;
 }
 
 .box {
