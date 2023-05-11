@@ -1,7 +1,13 @@
-a {
-    font-size: large;
+.nav-link, .logo {
+    font-size: 1.5vw;
+    transition: 0.3s;
 }
 
-.navbar-brand {
-    font-size: xx-large;
+.nav-link:hover, .logo:hover {
+    color: gray;
+    transition: 0.3s;
+}
+
+.logo {
+    font-size: 3vw;
 }
