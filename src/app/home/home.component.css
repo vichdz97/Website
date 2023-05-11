@@ -89,3 +89,23 @@ figure img:hover {
     color: gray;
     transition: 0.3s;
 }
+
+.contact-me {
+    margin-bottom: 5vw;
+}
+
+.contact-me .container {
+    border-radius: 20px;
+}
+
+.name {
+    margin-right: 1vw;
+}
+
+.email {
+    margin-left: 1vw;
+}
+
+.email-me {
+    font-size: 1.5vw;
+}
