@@ -2,19 +2,16 @@ footer {
     padding: 4vw ;
 }
 
-.copyright {
+.copyright, .bi {
     color: gray;
 }
 
-.bi {
+.bi, .bi:hover {
     font-size: 1.75vw;
-    color: gray;
     transition: 0.5s;
 }
 
 .bi:hover {
-    font-size: 1.75vw;
     color: white;
-    transition: 0.5s;
 }
 
