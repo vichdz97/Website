@@ -90,8 +90,5 @@ export class HomeComponent {
       this.contactForm.reset();
       this.alertMessage = "Message sent";
     }
-    else {
-      this.alertMessage = "";
-    }
   }
 }

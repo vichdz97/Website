@@ -67,7 +67,6 @@
                     </h6>
                     <p>{{ proj.description }}</p>
                     <div class="d-flex justify-content-end align-items-center">
-                        <!-- <a href="#" target="_blank"><i class="bi bi-globe2 mx-3"></i></a> -->
                         <a href="{{proj.url}}" target="_blank"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
@@ -87,7 +86,7 @@
                     </div>
                     <div class="form-group w-100 email">
                         <label for="email" class="text-danger">*</label>
-                        <input type="email" id="email" class="form-control" formControlName="email" placeholder="Your Email">
+                        <input type="email" id="email" class="form-control" formControlName="email" placeholder="Your Email" pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$">
                     </div>
                 </div>
                 <div class="form-group my-2">
@@ -98,16 +97,17 @@
                     <label for="message" class="text-danger">*</label>
                     <textarea id="message" class="form-control" formControlName="message" placeholder="Your Message"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary px-4">Send</button>
-            </form>
-            
-            <div class="text-center">
-                <ng-container *ngIf="alertMessage === ''; else success">
-                    <p class="text-danger">All fields are required</p>
+
+                <ng-container *ngIf="!contactForm.valid; else enableBtn">
+                    <button type="submit" class="btn btn-secondary px-4" disabled>Send</button>
                 </ng-container>
-                <ng-template #success>
-                    <p class="text-success">{{alertMessage}}</p>
+                <ng-template #enableBtn>
+                    <button type="submit" class="btn btn-primary px-4">Send</button>
                 </ng-template>
+            </form>
+
+            <div class="text-center">
+                <p class="text-success">{{ alertMessage }}</p>
             </div>
         </div>
         <p class="text-center mt-5 email-me">You may also email me at <a href="mailto:victorhernandezjr97@gmail.com">victorhernandezjr97@gmail.com</a>.</p>
