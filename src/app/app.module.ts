@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -12,7 +14,6 @@ import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
 import { FooterComponent } from './footer/footer.component';
-import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -30,7 +31,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     NgbModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy }
