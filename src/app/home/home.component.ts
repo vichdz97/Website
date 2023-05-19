@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -46,49 +45,5 @@ export class HomeComponent {
       url: "https://github.com/vichdz97/Library-Management-System"
     }
   ];
-
-  alertMessage!: string;
-
-  contactForm = this.fb.group({
-    name: ['', [Validators.required]],
-    email: ['', [Validators.required, Validators.email]],
-    subject: ['', [Validators.required]],
-    message: ['', [Validators.required]]
-  });
-
-  constructor (private fb: FormBuilder) { }
-
-  get nameControl() {
-    return this.contactForm.get('name');
-  }
-
-  get emailControl() {
-    return this.contactForm.get('email');
-  }
-
-  get subjectControl() {
-    return this.contactForm.get('subject');
-  }
   
-  get messageControl() {
-    return this.contactForm.get('message');
-  }
-
-  onSubmit() {
-    if (this.contactForm.valid) {
-      let name = this.nameControl?.value;
-      let email = this.emailControl?.value;
-      let subject = this.subjectControl?.value;
-      let message = this.messageControl?.value;
-      console.log(`
-      name: ${name}
-      email: ${email}
-      subject: ${subject}
-      message: 
-      ${message}
-      `);
-      this.contactForm.reset();
-      this.alertMessage = "Message sent";
-    }
-  }
 }

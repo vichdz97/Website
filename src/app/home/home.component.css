@@ -94,18 +94,10 @@ figure img:hover {
     margin-bottom: 5vw;
 }
 
-.contact-me .container {
-    border-radius: 20px;
+.contact-me p {
+    font-size: 2vw;
 }
 
-.name {
-    margin-right: 1vw;
-}
-
-.email {
-    margin-left: 1vw;
-}
-
-.email-me {
-    font-size: 1.5vw;
+.contact-me a {
+    font-size: 6vw;
 }

@@ -10,9 +10,10 @@
                 A first-gen <span class="text-primary">software engineer</span> 
                 passionate about creating interactive applications and learning new technologies. 
             </p>
-            <div class="links d-flex flex-row">
+            <div class="d-flex w-50 justify-content-between">
+                <a href="mailto:victorhernandezjr97@gmail.com?subject=Connecting with Victor Hernandez, Jr."><i class="bi bi-envelope-fill"></i></a>
                 <a href="http://linkedin.com/in/victorhernandezjr/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/vichdz97" class="mx-5" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://github.com/vichdz97" target="_blank"><i class="bi bi-github"></i></a>
                 <a href="https://www.facebook.com/victorhernandez97/" target="_blank"><i class="bi bi-facebook"></i></a>
             </div>
         </div>
@@ -77,33 +78,18 @@
 
     <div class="contact-me">
         <h2>Contact Me</h2>
-        <div class="container bg-light border p-4 mt-4">
-            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-                <div class="d-flex flex-row">
-                    <div class="form-group w-100 name">
-                        <label for="name" class="text-danger">*</label>
-                        <input type="text" id="name" class="form-control" formControlName="name" placeholder="Your Name">
-                    </div>
-                    <div class="form-group w-100 email">
-                        <label for="email" class="text-danger">*</label>
-                        <input type="email" id="email" class="form-control" formControlName="email" placeholder="Your Email" pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$">
-                    </div>
+        <div class="container text-center">
+            <div class="d-flex justify-content-around">
+                <div class="text-center">
+                    <a href="mailto:victorhernandezjr97@gmail.com?subject=Connecting with Victor Hernandez, Jr."><i class="bi bi-envelope-fill"></i></a>
+                    <p>Email</p>
                 </div>
-                <div class="form-group my-2">
-                    <label for="subject" class="text-danger">*</label>
-                    <input type="text" id="subject" class="form-control" formControlName="subject" placeholder="Subject">
+                <div class="text-center">
+                    <a href="http://linkedin.com/in/victorhernandezjr/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <p>LinkedIn</p>
                 </div>
-                <div class="form-group mb-4">
-                    <label for="message" class="text-danger">*</label>
-                    <textarea id="message" class="form-control" formControlName="message" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary px-4" [disabled]="!contactForm.valid">Send</button>
-            </form>
-
-            <div class="text-center">
-                <p class="text-success">{{ alertMessage }}</p>
             </div>
+            <p class="mt-2">Please feel free to reach out!</p>
         </div>
-        <p class="text-center mt-5 email-me">You may also email me at <a href="mailto:victorhernandezjr97@gmail.com">victorhernandezjr97@gmail.com</a>.</p>
     </div>
 </div>
