@@ -8,12 +8,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { NavComponent } from './nav/nav.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { AboutComponent } from './about/about.component';
-import { ErrorComponent } from './error/error.component';
-import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NavComponent } from './shared/nav/nav.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ErrorComponent } from './pages/error/error.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 
 
