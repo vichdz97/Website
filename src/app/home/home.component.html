@@ -97,13 +97,7 @@
                     <label for="message" class="text-danger">*</label>
                     <textarea id="message" class="form-control" formControlName="message" placeholder="Your Message"></textarea>
                 </div>
-
-                <ng-container *ngIf="!contactForm.valid; else enableBtn">
-                    <button type="submit" class="btn btn-secondary px-4" disabled>Send</button>
-                </ng-container>
-                <ng-template #enableBtn>
-                    <button type="submit" class="btn btn-primary px-4">Send</button>
-                </ng-template>
+                <button type="submit" class="btn btn-primary px-4" [disabled]="!contactForm.valid">Send</button>
             </form>
 
             <div class="text-center">
