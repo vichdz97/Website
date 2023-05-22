@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -45,5 +46,9 @@ export class HomeComponent {
       url: "https://github.com/vichdz97/Library-Management-System"
     }
   ];
+
+  constructor(private titleService: Title) {
+    this.titleService.setTitle("Victor Hernandez, Jr. | Home");
+  }
   
 }
