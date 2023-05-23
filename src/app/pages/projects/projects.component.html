@@ -13,6 +13,7 @@
                 </h6>
                 <p>{{ proj.description }}</p>
                 <div class="d-flex justify-content-end align-items-center">
+                    <a href="{{proj.web}}" target="_blank" class="mx-4" [hidden]="!proj.web"><i class="bi bi-globe2"></i></a>
                     <a href="{{proj.url}}" target="_blank"><i class="bi bi-github"></i></a>
                 </div>
             </div>
