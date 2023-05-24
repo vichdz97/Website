@@ -2,16 +2,43 @@ footer {
     padding: 4vw ;
 }
 
-.copyright, .bi {
+.container {
+    text-align: center;
+}
+
+.links {
+    margin-bottom: 1em;
+}
+
+i {
+    margin: 1em;
+    font-size: 1.5em;
+}
+
+i, .copyright {
     color: gray;
 }
 
-.bi, .bi:hover {
-    font-size: 1.75vw;
-    transition: 0.5s;
-}
+@media screen and (min-width: 960px) {
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    
+    .links {
+        display: flex;
+        justify-content: space-between;
+        width: 25%;
+    }
 
-.bi:hover {
-    color: white;
+    i {
+        font-size: 2vw;
+        transition: 0.5s;
+    }
+    
+    i:hover {
+        color: white;
+    }
 }
-
