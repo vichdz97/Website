@@ -1,16 +1,16 @@
 <div class="container">
-    <div class="summary d-flex justify-content-around align-items-center">
+    <div class="summary">
         <div class="image">
             <img src="assets/images/me-closeup.jpg" alt="My professional headshot" id="headshot">
         </div>
         <div class="info">
             <p>Hi there! My name is</p>
-            <h1>Victor Hernandez, Jr.</h1>
+            <h1 class="my-3">Victor Hernandez, Jr.</h1>
             <p>
                 A first-gen <span class="text-primary">software engineer</span> 
                 passionate about creating interactive applications and learning new technologies. 
             </p>
-            <div class="d-flex w-50 justify-content-between">
+            <div class="links">
                 <a href="mailto:victorhernandezjr97@gmail.com?subject=Connecting with Victor Hernandez, Jr."><i class="bi bi-envelope-fill"></i></a>
                 <a href="http://linkedin.com/in/victorhernandezjr/" target="_blank"><i class="bi bi-linkedin"></i></a>
                 <a href="https://github.com/vichdz97" target="_blank"><i class="bi bi-github"></i></a>
@@ -31,12 +31,14 @@
             and I'm eager to explore new opportunities!
             If I'm not coding, you'll probably find me competing in Mario Kart.
         </p>
-        <h3>Fun Facts:</h3>
-        <ul>
-            <li>Big Tex Native</li>
-            <li>Disney Devotee</li>
-            <li>Nintendo Switch Specialist</li>
-        </ul>
+        <div class="fun-facts">
+            <h4>Fun Facts:</h4>
+            <ul>
+                <li>Big Tex Native</li>
+                <li>Disney Devotee</li>
+                <li>Nintendo Switch Specialist</li>
+            </ul>
+        </div>
     </div>
 
     <div class="skills">
@@ -73,23 +75,23 @@
                 </div>
             </div>
         </div>
-        <p class="view-more text-center mt-2" routerLink="/projects">View More ></p>
+        <p class="view-more text-center" role="button" routerLink="/projects">View More ></p>
     </div>
 
     <div class="contact-me">
         <h2>Contact Me</h2>
-        <div class="container text-center">
+        <div class="container">
             <div class="d-flex justify-content-around">
-                <div class="text-center">
-                    <a href="mailto:victorhernandezjr97@gmail.com?subject=Connecting with Victor Hernandez, Jr."><i class="bi bi-envelope-fill"></i></a>
-                    <p>Email</p>
-                </div>
-                <div class="text-center">
-                    <a href="http://linkedin.com/in/victorhernandezjr/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    <p>LinkedIn</p>
-                </div>
+                <a href="mailto:victorhernandezjr97@gmail.com?subject=Connecting with Victor Hernandez, Jr." class="contact-link text-decoration-none">
+                    <i class="bi bi-envelope-fill"></i>
+                    <p class="text-dark">Email</p>
+                </a>
+                <a href="http://linkedin.com/in/victorhernandezjr/" target="_blank" class="contact-link text-decoration-none">
+                    <i class="bi bi-linkedin"></i>
+                    <p class="text-dark">Linkedin</p>
+                </a>
             </div>
-            <p class="mt-2">Please feel free to reach out!</p>
+            <p class="mt-2 reach-out">Please feel free to reach out!</p>
         </div>
     </div>
 </div>

@@ -42,7 +42,7 @@ export class HomeComponent {
       img: "library.png",
       tech: ["angular", "bootstrap", "java", "spring-boot"],
       description: `Created a dynamic web application that allows the user to 
-                    manage books in a virtual library environment`,
+                    manage books in a virtual library environment.`,
       url: "https://github.com/vichdz97/Library-Management-System"
     }
   ];

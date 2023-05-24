@@ -1,22 +1,28 @@
 .summary {
-    max-width: 960px;
-    margin: 17vw auto 20vw;
+    min-width: auto;
+    margin: 15em auto;
+    text-align: center;
 }
 
 #headshot {
-    width: 350px;
-    height: 350px;
+    width: 45vw;
+    height: 45vw;
     object-fit: cover;
     object-position: 0 40%;
     border-radius: 50%;
 }
 
 .image {
-    margin: 0 5vw;
+    margin: 5vw;
 }
 
-.info {
-    font-size: 2vw;
+.info, .bi {
+    font-size: 1.2em;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
 }
 
 .bi {
@@ -24,12 +30,18 @@
 }
 
 .about-me {
-    font-size: 2vw;
-    margin-bottom: 15vw;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10em;
+}
+
+.fun-facts ul {
+    text-align: left;
 }
 
 .skills {
-    margin-bottom: 15vw;
+    margin-bottom: 10em;
+    text-align: center;
 }
 
 figure {
@@ -37,32 +49,23 @@ figure {
 }
 
 figure img {
-    width: 8vw;
-    transition: 0.5s;
-}
-
-figure img:hover {
-    transform: translateY(-5%);
-    transition: 0.5s;
+    width: 5em;
 }
 
 .projects {
-    margin-bottom: 10vw;
+    margin-bottom: 5em;
+}
+
+.projects h2 {
+    text-align: center;
 }
 
 .box {
-    min-width: 500px;
-    max-width: 960px;
+    min-width: fit-content;
     border-radius: 20px;
     box-shadow: 4px 4px 10px lightgray;
-    margin: 2vw;
-    padding: 2vw;
-    transition: 0.5s;
-}
-
-.box:hover {
-    box-shadow: 10px 10px 20px lightgray;
-    transition: 0.5s;
+    margin: 1.5em;
+    padding: 1.5em;
 }
 
 .screenshot {
@@ -72,32 +75,121 @@ figure img:hover {
 }
 
 .tech-used {
-    width: 3vw;
-    margin-left: 1.5vw;
+    width: 1.5em;
+    margin-left: 0.4em;
 }
 
 .box .bi {
-    font-size: 2vw;
+    font-size: 1.5em;
 }
 
 .view-more {
+    margin-top: 1.5em;
     transition: 0.3s;
 }
 
 .view-more:hover {
-    cursor: pointer;
     color: gray;
-    transition: 0.3s;
 }
 
 .contact-me {
-    margin-bottom: 5vw;
+    text-align: center;
 }
 
-.contact-me p {
-    font-size: 2vw;
+.contact-link i {
+    font-size: 2.5em;
 }
 
-.contact-me a {
-    font-size: 6vw;
+@media screen and (min-width: 960px) {
+    .summary{
+        max-width: 960px;
+        margin: 18vw auto 20vw;
+        text-align: left;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #headshot {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .image {
+        margin: 0 5vw;
+    }
+
+    .info, .bi {
+        font-size: 2vw;
+    }
+
+    .links {
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .about-me {
+        font-size: 2vw;
+        margin-bottom: 15vw;
+        text-align: left;
+    }
+
+    .skills {
+        margin-bottom: 15vw;
+        text-align: left;
+    }
+
+    figure img {
+        width: 8vw;
+        transition: 0.5s;
+    }
+
+    figure img:hover {
+        transform: translateY(-5%);
+    }
+
+    .projects {
+        margin-bottom: 10vw;
+    }
+
+    .projects h2 {
+        text-align: left;
+    }
+
+    .box {
+        min-width: 500px;
+        max-width: 960px;
+        margin: 2vw;
+        padding: 2vw;
+        transition: 0.5s;
+    }
+
+    .box:hover {
+        box-shadow: 10px 10px 20px lightgray;
+    }
+
+    .tech-used {
+        width: 3vw;
+        margin-left: 1.5vw;
+    }
+
+    .box .bi {
+        font-size: 2vw;
+    }
+
+    .view-more {
+        margin-top: 2vw;
+    }
+
+    .contact-me {
+        margin-bottom: 5vw;
+    }
+
+    .contact-me h2 {
+        text-align: left;
+    }
+
+    .contact-link, .reach-out {
+        font-size: 2vw;
+    }
 }
