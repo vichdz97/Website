@@ -1,6 +1,6 @@
 .summary {
     min-width: auto;
-    margin: 15em auto;
+    margin: 10em auto;
     text-align: center;
 }
 
@@ -103,7 +103,7 @@ figure img {
 @media screen and (min-width: 960px) {
     .summary{
         max-width: 960px;
-        margin: 18vw auto 20vw;
+        margin: 17vw auto;
         text-align: left;
         display: flex;
         justify-content: space-around;
