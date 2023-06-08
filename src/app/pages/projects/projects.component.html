@@ -3,7 +3,14 @@
         <div class="row">
             <div class="col box bg-light" *ngFor="let proj of projects">
                 <h4>{{ proj.title }}</h4>
-                <img src="assets/images/{{proj.img}}" alt="Screenshot of project" class="screenshot my-3">
+                <ng-container *ngIf="!proj.web; else link">
+                    <img src="assets/images/{{proj.img}}" alt="Screenshot of project" class="screenshot my-3">
+                </ng-container>
+                <ng-template #link>
+                    <a href="{{proj.web}}" target="_blank">
+                        <img src="assets/images/{{proj.img}}" alt="Screenshot of project" class="screenshot my-3">
+                    </a>
+                </ng-template>
                 <h6 class="d-flex align-items-center">
                     Technologies Used:
                     <div *ngFor="let techName of proj.tech">
