@@ -26,13 +26,13 @@ export class ProjectsComponent {
       url: "https://github.com/vichdz97/Library-Management-System"
     },
     {
-      title: "Bubbles Demo",
-      img: "bubbles.png",
+      title: "Piano Tap",
+      img: "piano-tap.png",
       tech: ["html", "css", "javascript"],
       description: `An interactive web application that allows the user
-                    to make music at the click of a button.`,
-      url: "https://github.com/vichdz97/bubbles",
-      web: "https://bubbles-demo.victor-jr.com"
+                    to make pianic music with the click of a tile.`,
+      url: "https://github.com/vichdz97/Piano-Tap",
+      web: "https://piano-tap.victor-jr.com"
     },
     {
       title: "Calculator App",
