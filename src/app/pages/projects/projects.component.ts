@@ -31,7 +31,7 @@ export class ProjectsComponent {
       img: "piano-tap.png",
       tech: ["html", "css", "javascript"],
       description: `An interactive web application that allows the user
-                    to make pianic music with the click of a tile.`,
+                    to make music with the tap of a tile.`,
       url: "https://piano-tap.victor-jr.com",
       github: "https://github.com/vichdz97/Piano-Tap"
     },
