@@ -21,7 +21,7 @@ export class ProjectsComponent {
     { 
       title: "Library Management System",
       img: "library.png",
-      tech: ["angular", "bootstrap", "java", "spring-boot"],
+      tech: ["mysql", "java", "spring-boot", "angular", "bootstrap"],
       description: `A dynamic web application that allows the user to 
                     manage books in a virtual library environment.`,
       github: "https://github.com/vichdz97/Library-Management-System"
