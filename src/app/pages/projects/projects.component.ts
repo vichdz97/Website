@@ -12,10 +12,11 @@ export class ProjectsComponent {
     { 
       title: "Authentication System", 
       img: "authsys.png",
-      tech: ["angular", "bootstrap", "java", "spring-boot"],
+      tech: ["aws", "mysql", "java", "spring-boot", "angular", "bootstrap", "postman"],
       description: `A responsive web application that redirects the user 
                     to the appropriate landing page given specific login credentials.`,
-      url: "https://github.com/vichdz97/AuthenticationSystem"
+      url: "http://authentication-system.s3-website.us-east-2.amazonaws.com/#/home",
+      github: "https://github.com/vichdz97/Authentication-System"
     }, 
     { 
       title: "Library Management System",
@@ -23,7 +24,7 @@ export class ProjectsComponent {
       tech: ["angular", "bootstrap", "java", "spring-boot"],
       description: `A dynamic web application that allows the user to 
                     manage books in a virtual library environment.`,
-      url: "https://github.com/vichdz97/Library-Management-System"
+      github: "https://github.com/vichdz97/Library-Management-System"
     },
     {
       title: "Piano Tap",
@@ -31,8 +32,8 @@ export class ProjectsComponent {
       tech: ["html", "css", "javascript"],
       description: `An interactive web application that allows the user
                     to make pianic music with the click of a tile.`,
-      url: "https://github.com/vichdz97/Piano-Tap",
-      web: "https://piano-tap.victor-jr.com"
+      url: "https://piano-tap.victor-jr.com",
+      github: "https://github.com/vichdz97/Piano-Tap"
     },
     {
       title: "Calculator App",
@@ -40,8 +41,8 @@ export class ProjectsComponent {
       tech: ["react", "typescript", "bootstrap"],
       description: `A simple calculator app that performs various
                     mathematical operations.`,
-      url: "https://github.com/vichdz97/react-calculator",
-      web: "https://calculator-app.victor-jr.com"
+      url: "https://calculator-app.victor-jr.com",
+      github: "https://github.com/vichdz97/react-calculator"
     }
   ];
 

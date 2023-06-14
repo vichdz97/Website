@@ -61,16 +61,19 @@
             <div class="row">
                 <div class="col box bg-light" *ngFor="let proj of projects">
                     <h4>{{ proj.title }}</h4>
-                    <img src="assets/images/{{proj.img}}" alt="Screenshot of project" class="screenshot my-3">
-                    <h6 class="d-flex align-items-center">
-                        Technologies Used:
+                    <a href="{{proj.url}}" target="_blank">
+                        <img src="assets/images/{{proj.img}}" alt="Screenshot of project" class="screenshot my-3">
+                    </a>
+                    <h6>Technologies Used:</h6>
+                    <div class="m-2 d-flex justify-content-around align-items-center">
                         <div *ngFor="let techName of proj.tech">
                             <img src="assets/logos/{{techName}}.svg" alt="Tech logo" class="tech-used">
                         </div>
-                    </h6>
+                    </div>
                     <p>{{ proj.description }}</p>
                     <div class="d-flex justify-content-end align-items-center">
-                        <a href="{{proj.url}}" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="{{proj.url}}" target="_blank" class="mx-4" [hidden]="!proj.url"><i class="bi bi-globe2"></i></a>
+                        <a href="{{proj.github}}" target="_blank"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>
