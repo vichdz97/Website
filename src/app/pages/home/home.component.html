@@ -83,18 +83,32 @@
 
     <div class="contact-me">
         <h2>Contact Me</h2>
-        <div class="container">
-            <div class="d-flex justify-content-around">
-                <a href="mailto:victorhernandezjr97@gmail.com?subject=Connecting with Victor Hernandez, Jr." class="contact-link text-decoration-none">
-                    <i class="bi bi-envelope-fill"></i>
-                    <p class="text-dark">Email</p>
-                </a>
-                <a href="http://linkedin.com/in/victorhernandezjr/" target="_blank" class="contact-link text-decoration-none">
-                    <i class="bi bi-linkedin"></i>
-                    <p class="text-dark">Linkedin</p>
-                </a>
-            </div>
-            <p class="mt-2 reach-out">Please feel free to reach out!</p>
+        <div class="container mt-4">
+            <form [formGroup]="contactForm" class="rounded shadow p-3 bg-light">
+                <div class="row">
+                    <div class="form-group col">
+                        <label for="fullName">Name<span class="form-label text-danger"> *</span></label>
+                        <input type="text" id="fullName" class="form-control" formControlName="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="emailAddress">Email<span class="text-danger"> *</span></label>
+                        <input type="email" id="emailAddress" class="form-control" formControlName="email" placeholder="your@email.com" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="subjectTitle">Subject<span class="text-danger"> *</span></label>
+                        <input type="text" id="subjectTitle" class="form-control" formControlName="subject" placeholder="Subject Title" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="messageArea">Message<span class="text-danger"> *</span></label>
+                        <textarea id="messageArea" class="form-control" formControlName="message" rows="3" placeholder="Your Message" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Send</button>
+            </form>
         </div>
     </div>
 </div>
