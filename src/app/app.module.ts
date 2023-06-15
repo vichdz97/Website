@@ -14,6 +14,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { InlineErrorComponent } from './shared/inline-error/inline-error.component';
 
 
 
@@ -25,7 +26,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     ProjectsComponent,
     AboutComponent,
     ErrorComponent,
-    FooterComponent
+    FooterComponent,
+    InlineErrorComponent
   ],
   imports: [
     BrowserModule,
