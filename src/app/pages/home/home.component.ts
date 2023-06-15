@@ -60,5 +60,24 @@ export class HomeComponent {
     constructor(private titleService: Title) {
         this.titleService.setTitle("Victor Hernandez, Jr. | Home");
     }
-        
+
+    get nameControl() {
+        return this.contactForm.get('name') as FormControl;
+    }
+
+    get emailControl() {
+        return this.contactForm.get('email') as FormControl;
+    }
+
+    get subjectControl() {
+        return this.contactForm.get('subject') as FormControl;
+    }
+
+    get messageControl() {
+        return this.contactForm.get('message') as FormControl;
+    }
+
+    hasErrors(control: FormControl) {
+        return control?.invalid && (control?.dirty || control?.touched);
+    }
 }

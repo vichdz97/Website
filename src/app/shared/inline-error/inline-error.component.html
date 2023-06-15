@@ -1,1 +1,6 @@
+<span class="is-invalid"></span>
+<ng-container *ngIf="control?.invalid && (control?.dirty || control?.touched)">
+    <div *ngIf="control?.errors?.['required']" class="invalid-feedback">This field is required.</div>
+    <div *ngIf="control?.errors?.['pattern']" class="invalid-feedback">Invalid email format.</div>
+</ng-container>
                    
