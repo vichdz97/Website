@@ -96,8 +96,21 @@ figure img {
     text-align: center;
 }
 
-.contact-link i {
-    font-size: 2.5em;
+form {
+    margin-bottom: 5em;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+label {
+    margin: 0 0 0.3em 0.3em;
+}
+
+button {
+    width: 100%;
 }
 
 @media screen and (min-width: 960px) {
@@ -189,7 +202,10 @@ figure img {
         text-align: left;
     }
 
-    .contact-link, .reach-out {
-        font-size: 2vw;
+    button {
+        display: block;
+        position: relative;
+        left: 0;
+        width: 25%;
     }
 }
