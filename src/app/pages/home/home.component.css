@@ -113,6 +113,10 @@ button {
     width: 100%;
 }
 
+.text-success {
+    margin-top: 1.5em;
+}
+
 @media screen and (min-width: 960px) {
     .summary{
         max-width: 960px;
@@ -202,10 +206,20 @@ button {
         text-align: left;
     }
 
+    .successBtnMsg {
+        display: flex;
+        align-items: baseline;
+    }
+
     button {
         display: block;
         position: relative;
         left: 0;
         width: 25%;
+        margin-right: 2em;
+    }
+
+    .text-success {
+        margin-top: 0;
     }
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
+import emailjs from '@emailjs/browser';
 
 @Component({
     selector: 'app-home',
@@ -57,6 +58,8 @@ export class HomeComponent {
         message: new FormControl('', Validators.required)
     });
 
+    confirmation: string = "";
+
     constructor(private titleService: Title) {
         this.titleService.setTitle("Victor Hernandez, Jr. | Home");
     }
@@ -79,5 +82,22 @@ export class HomeComponent {
 
     hasErrors(control: FormControl) {
         return control?.invalid && (control?.dirty || control?.touched);
+    }
+
+    sendAnotherMsg() {
+        return this.contactForm.dirty || this.contactForm.touched;
+    }
+
+    async sendEmail() {
+        emailjs.init("Vqf8AFqe4RaJTl5DB");
+        await emailjs.send("service_b90itwn","template_kyxxx89",{
+            to_name: "Victor",
+            from_name: this.contactForm.value.name,
+            from_email: this.contactForm.value.email?.toLowerCase(),
+            subject: this.contactForm.value.subject,
+            message: this.contactForm.value.message
+        });
+        this.contactForm.reset();
+        this.confirmation = "Message sent successfully!";
     }
 }

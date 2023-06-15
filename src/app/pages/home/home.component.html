@@ -84,7 +84,7 @@
     <div class="contact-me">
         <h2>Contact Me</h2>
         <div class="container mt-4">
-            <form [formGroup]="contactForm" class="rounded shadow p-3 bg-light">
+            <form [formGroup]="contactForm" (ngSubmit)="sendEmail()" class="rounded shadow p-3 bg-light">
                 <div class="row">
                     <div class="form-group col">
                         <label for="fullName">Name<span class="form-label text-danger"> *</span></label>
@@ -115,7 +115,10 @@
                         <app-inline-error [control]="messageControl"></app-inline-error>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Send</button>
+                <div class="successBtnMsg">
+                    <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Send</button>
+                    <p class="text-success">{{ sendAnotherMsg() ? '' : confirmation }}</p>
+                </div>
             </form>
         </div>
     </div>
