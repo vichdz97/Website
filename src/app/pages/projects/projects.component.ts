@@ -15,7 +15,7 @@ export class ProjectsComponent {
       tech: ["aws", "mysql", "java", "spring-boot", "angular", "bootstrap", "postman"],
       description: `A responsive web application that redirects the user 
                     to the appropriate landing page given specific login credentials.`,
-      url: "http://authentication-system.s3-website.us-east-2.amazonaws.com/#/home",
+      url: "http://authentication-system.s3-website.us-east-2.amazonaws.com/#/login",
       github: "https://github.com/vichdz97/Authentication-System"
     }, 
     { 
