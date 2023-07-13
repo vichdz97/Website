@@ -17,23 +17,6 @@ export class ProjectsComponent {
                     to the appropriate landing page given specific login credentials.`,
       url: "http://authentication-system.s3-website.us-east-2.amazonaws.com/#/login",
       github: "https://github.com/vichdz97/Authentication-System"
-    }, 
-    { 
-      title: "Library Management System",
-      img: "library.png",
-      tech: ["mysql", "java", "spring-boot", "angular", "bootstrap"],
-      description: `A dynamic web application that allows the user to 
-                    manage books in a virtual library environment.`,
-      github: "https://github.com/vichdz97/Library-Management-System"
-    },
-    {
-      title: "Piano Tap",
-      img: "piano-tap.png",
-      tech: ["html", "css", "javascript"],
-      description: `An interactive web application that allows the user
-                    to make music with the tap of a tile.`,
-      url: "https://piano-tap.victor-jr.com",
-      github: "https://github.com/vichdz97/Piano-Tap"
     },
     {
       title: "Calculator App",
@@ -43,6 +26,15 @@ export class ProjectsComponent {
                     mathematical operations.`,
       url: "https://calculator-app.victor-jr.com",
       github: "https://github.com/vichdz97/react-calculator"
+    },
+    {
+      title: "Piano Tap",
+      img: "piano-tap.png",
+      tech: ["html", "css", "javascript"],
+      description: `An interactive web application that allows the user
+                    to make music with the tap of a tile.`,
+      url: "https://piano-tap.victor-jr.com",
+      github: "https://github.com/vichdz97/Piano-Tap"
     }
   ];
 
