@@ -32,23 +32,24 @@ export class HomeComponent {
     ];
 
     projects = [
-    { 
-        title: "Authentication System", 
-        img: "authsys.png",
-        tech: ["aws", "mysql", "java", "spring-boot", "angular", "bootstrap", "postman"],
-        description: `Designed a responsive web application that redirects the user 
-                    to the appropriate landing page given specific login credentials.`,
-        url: "http://authentication-system.s3-website.us-east-2.amazonaws.com/#/login",
-        github: "https://github.com/vichdz97/Authentication-System"
-    }, 
-    { 
-        title: "Library Management System",
-        img: "library.png",
-        tech: ["mysql", "java", "spring-boot", "angular", "bootstrap"],
-        description: `Created a dynamic web application that allows the user to 
-                    manage books in a virtual library environment.`,
-        github: "https://github.com/vichdz97/Library-Management-System"
-    }
+        { 
+            title: "Authentication System", 
+            img: "authsys.png",
+            tech: ["aws", "mysql", "java", "spring-boot", "angular", "bootstrap", "postman"],
+            description: `Designed a responsive web application that redirects the user 
+                        to the appropriate landing page given specific login credentials.`,
+            url: "http://authentication-system.s3-website.us-east-2.amazonaws.com/#/login",
+            github: "https://github.com/vichdz97/Authentication-System"
+        }, 
+        {
+            title: "Calculator App",
+            img: "calculator.png",
+            tech: ["react", "typescript", "bootstrap"],
+            description: `A simple calculator app that performs various
+                        mathematical operations.`,
+            url: "https://calculator-app.victor-jr.com",
+            github: "https://github.com/vichdz97/react-calculator"
+        }
     ];
 
     contactForm = new FormGroup({
