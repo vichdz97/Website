@@ -44,6 +44,14 @@ export class ProjectsComponent {
                     and game info.`,
       url: "https://pokemon-generator.victor-jr.com",
       github: "https://github.com/vichdz97/pokemon-generator"
+    },
+    {
+      title: "Tic-Tac-Toe",
+      img: "tic-tac-toe.png",
+      tech: ["react", "typescript", "bootstrap"],
+      description: `A fun, competitive 2-Player game of Tic-Tac-Toe.`,
+      url: "https://tic-tac-toe.victor-jr.com",
+      github: "https://github.com/vichdz97/tic-tac-toe"
     }
   ];
 
