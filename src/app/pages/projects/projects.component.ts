@@ -19,6 +19,15 @@ export class ProjectsComponent {
       github: "https://github.com/vichdz97/Authentication-System"
     },
     {
+      title: "Pokémon Generator",
+      img: "pokemon.png",
+      tech: ["pokeapi", "react", "typescript", "bootstrap"],
+      description: `A random Pokémon generator that displays a Pokémon's sprite 
+                    and game info.`,
+      url: "https://pokemon-generator.victor-jr.com",
+      github: "https://github.com/vichdz97/pokemon-generator"
+    },
+    {
       title: "Calculator App",
       img: "calculator.png",
       tech: ["react", "typescript", "bootstrap"],
@@ -35,15 +44,6 @@ export class ProjectsComponent {
                     to make music with the tap of a tile.`,
       url: "https://piano-tap.victor-jr.com",
       github: "https://github.com/vichdz97/Piano-Tap"
-    },
-    {
-      title: "Pokémon Generator",
-      img: "pokemon.png",
-      tech: ["react", "typescript", "bootstrap"],
-      description: `A random Pokémon generator that displays a Pokémon's sprite 
-                    and game info.`,
-      url: "https://pokemon-generator.victor-jr.com",
-      github: "https://github.com/vichdz97/pokemon-generator"
     },
     {
       title: "Tic-Tac-Toe",
