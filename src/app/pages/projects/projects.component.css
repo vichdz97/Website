@@ -1,13 +1,14 @@
 .projects {
-    margin: 5em auto 2em;
+    margin: 90px 20px 50px;
 }
 
 .box {
-    min-width: fit-content;
+    margin: 20px;
+    padding: 20px;
     border-radius: 20px;
-    box-shadow: 4px 4px 10px lightgray;
-    margin: 1.5em;
-    padding: 1.5em;
+    box-shadow: 3px 3px 10px lightgray;
+    max-width: fit-content;
+    min-height: 450px;
 }
 
 .screenshot {
@@ -26,18 +27,18 @@ i {
 }
 
 @media screen and (min-width: 760px) {
+    .box {
+        min-width: 400px;
+    }
+
     #sameline-img {
         margin: 0 1em;
     }
 }
 
 @media screen and (min-width: 960px) {
-    .projects {
-        margin: 7vw auto 5vw;
-    }
-
     .box {
-        min-width: 500px;
+        max-width: 500px;
         margin: 2vw;
         padding: 2vw;
         transition: 0.5s;
