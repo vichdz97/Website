@@ -59,13 +59,18 @@
         <h2>My Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="col box bg-light" *ngFor="let proj of projects">
+                <div class="col box bg-light d-flex flex-column justify-content-evenly" *ngFor="let proj of projects">
                     <h4>{{ proj.title }}</h4>
-                    <a href="{{proj.url}}" target="_blank">
+                    <ng-container *ngIf="proj.url; else noUrl">
+                        <a href="{{proj.url}}" target="_blank">
+                            <img src="assets/images/{{proj.img}}" alt="Screenshot of project" class="screenshot my-3">
+                        </a>
+                    </ng-container>
+                    <ng-template #noUrl>
                         <img src="assets/images/{{proj.img}}" alt="Screenshot of project" class="screenshot my-3">
-                    </a>
+                    </ng-template>
                     <h6>Technologies Used:</h6>
-                    <div class="m-2 d-flex justify-content-around align-items-center">
+                    <div class="m-2 d-flex justify-content-evenly align-items-center">
                         <div *ngFor="let techName of proj.tech">
                             <img src="assets/logos/{{techName}}.svg" alt="Tech logo" class="tech-used">
                         </div>
