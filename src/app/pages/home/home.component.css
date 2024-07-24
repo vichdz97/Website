@@ -1,15 +1,18 @@
-.summary {
-    min-width: auto;
-    margin: 10em auto;
-    text-align: center;
-}
+/*** MOBILE VIEW ***/
 
+/*** HEADSHOT & SUMMARY ***/
 #headshot {
     width: 45vw;
     height: 45vw;
     object-fit: cover;
     object-position: 0 40%;
     border-radius: 50%;
+}
+
+.summary {
+    min-width: auto;
+    margin: 10em auto;
+    text-align: center;
 }
 
 .image {
@@ -29,16 +32,36 @@
     transition: 0.3s;
 }
 
+/*** ABOUT ME ***/
 .about-me {
     font-size: 1.2em;
     text-align: center;
     margin-bottom: 10em;
 }
 
+#txst-link, #capgemini-link, #data-link, #smash-link {
+    text-decoration: none;
+}
+
 .fun-facts ul {
     text-align: left;
 }
 
+li {
+    list-style: none;
+}
+
+li span {
+    position: relative;
+    left: 10px;
+    top: -4px;
+}
+
+#texas { list-style-image: url('src/assets/images/texas.png'); }
+#disney { list-style-image: url('src/assets/images/disney.png'); }
+#switch { list-style-image: url('src/assets/images/switch.png'); }
+
+/*** MY SKILLS ***/
 .skills {
     margin-bottom: 10em;
     text-align: center;
@@ -52,6 +75,7 @@ figure img {
     width: 5em;
 }
 
+/*** MY PROJECTS ***/
 .projects {
     margin-bottom: 5em;
 }
@@ -92,6 +116,7 @@ figure img {
     color: gray;
 }
 
+/*** CONTACT ME ***/
 .contact-me {
     text-align: center;
 }
@@ -117,6 +142,7 @@ button {
     margin-top: 1.5em;
 }
 
+/*** DESKTOP VIEW ***/
 @media screen and (min-width: 960px) {
     .summary{
         max-width: 960px;
