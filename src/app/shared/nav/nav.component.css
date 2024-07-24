@@ -1,12 +1,17 @@
-.nav-link, .logo {
+.logo, .nav-link {
     font-size: 1.25em;
     transition: 0.3s;
+    color: white;
 }
 
-.nav-link:hover, .logo:hover {
+.logo:hover, .nav-link:hover {
     color: gray;
 }
 
 .logo {
     font-size: 2.2em;
+}
+
+.navbar-toggler {
+    color: white;
 }
