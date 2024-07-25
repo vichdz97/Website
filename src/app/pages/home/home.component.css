@@ -76,12 +76,12 @@ figure img {
     width: 5em;
 }
 
-/*** MY PROJECTS ***/
-.projects {
+/*** MY PROJECTS & ARCADE ***/
+.projects, .arcade {
     margin-bottom: 5em;
 }
 
-.projects h2 {
+.projects h2, .arcade h2 {
     text-align: center;
 }
 

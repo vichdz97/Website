@@ -79,12 +79,22 @@
                     <ng-template #noUrl>
                         <img src="assets/images/{{proj.img}}" alt="Screenshot of project" class="screenshot my-3">
                     </ng-template>
-                    <h6>Technologies Used:</h6>
-                    <div class="m-2 d-flex justify-content-evenly align-items-center">
-                        <div *ngFor="let techName of proj.tech">
-                            <img src="assets/logos/{{techName}}.svg" alt="Tech logo" class="tech-used">
+                    <ng-container *ngIf="proj.tech.length >= 4; else sameline">
+                        <h6>Technologies Used:</h6>
+                        <div class="m-2 d-flex justify-content-evenly align-items-center">
+                            <div *ngFor="let techName of proj.tech">
+                                <img src="assets/logos/{{techName}}.svg" alt="Tech logo" class="tech-used">
+                            </div>
                         </div>
-                    </div>
+                    </ng-container>
+                    <ng-template #sameline>
+                        <h6 class="d-flex align-items-center">
+                            Technologies Used:
+                            <div *ngFor="let techName of proj.tech">
+                                <img src="assets/logos/{{techName}}.svg" alt="Tech logo" class="tech-used" id="sameline-img">
+                            </div>
+                        </h6>
+                    </ng-template>
                     <p>{{ proj.description }}</p>
                     <div class="d-flex justify-content-end align-items-center">
                         <a href="{{proj.url}}" target="_blank" class="mx-4" [hidden]="!proj.url"><i class="bi bi-globe2"></i></a>
@@ -110,12 +120,12 @@
                     <ng-template #noUrl>
                         <img src="assets/images/{{game.img}}" alt="Screenshot of game" class="screenshot my-3">
                     </ng-template>
-                    <h6>Technologies Used:</h6>
-                    <div class="m-2 d-flex justify-content-evenly align-items-center">
+                    <h6 class="d-flex align-items-center">
+                        Technologies Used:
                         <div *ngFor="let techName of game.tech">
-                            <img src="assets/logos/{{techName}}.svg" alt="Tech logo" class="tech-used">
+                            <img src="assets/logos/{{techName}}.svg" alt="Tech logo" class="tech-used" id="sameline-img">
                         </div>
-                    </div>
+                    </h6>
                     <p>{{game.description}}</p>
                     <div class="d-flex justify-content-end align-items-center">
                         <a href="{{game.url}}" target="_blank" class="mx-4" [hidden]="!game.url"><i class="bi bi-globe2"></i></a>
