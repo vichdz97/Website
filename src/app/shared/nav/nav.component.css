@@ -1,14 +1,14 @@
-.logo, .nav-link {
+#logo, .nav-link {
     font-size: 1.25em;
     transition: 0.3s;
     color: white;
 }
 
-.logo:hover, .nav-link:hover {
+#logo:hover, .nav-link:hover {
     color: gray;
 }
 
-.logo {
+#logo {
     font-size: 2.2em;
 }
 
