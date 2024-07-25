@@ -52,6 +52,26 @@ export class HomeComponent {
         }
     ];
 
+    games = [
+        {
+          title: "Piano Tap",
+          img: "piano-tap.png",
+          tech: ["html", "css", "javascript"],
+          description: `An interactive web application that allows the user
+                        to make music with the tap of a tile.`,
+          url: "https://piano-tap.victor-jr.com",
+          github: "https://github.com/vichdz97/Piano-Tap"
+        },
+        {
+          title: "Tic-Tac-Toe",
+          img: "tic-tac-toe.png",
+          tech: ["react", "typescript", "bootstrap"],
+          description: `A fun, competitive 2-Player game of Tic-Tac-Toe.`,
+          url: "https://tic-tac-toe.victor-jr.com",
+          github: "https://github.com/vichdz97/tic-tac-toe"
+        },
+      ];
+
     contactForm = new FormGroup({
         name: new FormControl('', Validators.required),
         email: new FormControl('', [Validators.required, Validators.pattern(/^([a-zA-Z0-9]+[\._-]?)+[a-zA-Z0-9]@(([a-zA-Z0-9]+[\._-]?)+[a-zA-Z0-9]\.)+[a-zA-Z]{2,4}$/)]),

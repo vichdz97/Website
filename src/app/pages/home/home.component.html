@@ -96,6 +96,37 @@
         <p class="view-more text-center" role="button" routerLink="/projects">View More ></p>
     </div>
 
+    <div class="arcade">
+        <h2>My Arcade</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col box bg-light d-flex flex-column justify-content-evenly" *ngFor="let game of games">
+                    <h4>{{game.title}}</h4>
+                    <ng-container *ngIf="game.url; else noUrl">
+                        <a href="{{game.url}}" target="_blank">
+                            <img src="assets/images/{{game.img}}" alt="Screenshot of game" class="screenshot my-3">
+                        </a>
+                    </ng-container>
+                    <ng-template #noUrl>
+                        <img src="assets/images/{{game.img}}" alt="Screenshot of game" class="screenshot my-3">
+                    </ng-template>
+                    <h6>Technologies Used:</h6>
+                    <div class="m-2 d-flex justify-content-evenly align-items-center">
+                        <div *ngFor="let techName of game.tech">
+                            <img src="assets/logos/{{techName}}.svg" alt="Tech logo" class="tech-used">
+                        </div>
+                    </div>
+                    <p>{{game.description}}</p>
+                    <div class="d-flex justify-content-end align-items-center">
+                        <a href="{{game.url}}" target="_blank" class="mx-4" [hidden]="!game.url"><i class="bi bi-globe2"></i></a>
+                        <a href="{{game.github}}" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="view-more text-center" role="button" routerLink="/arcade">View More ></p>
+    </div>
+
     <div class="contact-me">
         <h2>Contact Me</h2>
         <div class="container mt-4">

@@ -15,6 +15,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { InlineErrorComponent } from './shared/inline-error/inline-error.component';
+import { ArcadeComponent } from './pages/arcade/arcade.component';
 
 
 
@@ -27,7 +28,8 @@ import { InlineErrorComponent } from './shared/inline-error/inline-error.compone
     AboutComponent,
     ErrorComponent,
     FooterComponent,
-    InlineErrorComponent
+    InlineErrorComponent,
+    ArcadeComponent
   ],
   imports: [
     BrowserModule,
