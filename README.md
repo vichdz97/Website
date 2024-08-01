@@ -1,6 +1,6 @@
 # My Website Portfolio
 > [!NOTE]
-> Last updated July 25, 2024.
+> Last updated July 31, 2024.
 
 Hi there! Make sure to check out my [website](https://victor-jr.com/). (:
 
