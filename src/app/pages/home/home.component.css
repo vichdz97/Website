@@ -75,6 +75,7 @@ figure {
 #skill-logo {
     width: 85px;
     height: 85px;
+    margin-bottom: 5px;
 }
 
 /*** MY PROJECTS & ARCADE ***/
@@ -189,6 +190,8 @@ button {
     }
 
     #skill-logo {
+        width: 100px;
+        height: 100px;
         transition: 0.5s;
     }
 
