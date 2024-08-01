@@ -145,6 +145,8 @@ button {
 
 /*** DESKTOP VIEW ***/
 @media screen and (min-width: 960px) {
+    
+    /*** HEADSHOT & SUMMARY ***/
     .summary{
         max-width: 960px;
         margin: 17vw auto;
@@ -172,12 +174,14 @@ button {
         justify-content: space-between;
     }
 
+    /*** ABOUT ME ***/
     .about-me {
         font-size: 2vw;
         margin-bottom: 15vw;
         text-align: left;
     }
 
+    /*** MY SKILLS ***/
     .skills {
         margin-bottom: 15vw;
         text-align: left;
@@ -192,11 +196,12 @@ button {
         transform: translateY(-5%);
     }
 
-    .projects {
+    /*** MY PROJECTS & ARCADE ***/
+    .projects, .arcade {
         margin-bottom: 10vw;
     }
 
-    .projects h2 {
+    .projects h2, .arcade h2 {
         text-align: left;
     }
 
@@ -225,6 +230,7 @@ button {
         margin-top: 2vw;
     }
 
+    /*** CONTACT ME ***/
     .contact-me {
         margin-bottom: 5vw;
     }
