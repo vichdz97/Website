@@ -51,16 +51,14 @@
         </div>
     </div>
 
-    <div class="skills">
+    <div id="my-skills">
         <h2>My Skills</h2>
-        <div class="container mt-4">
-            <div class="row">
-                <div class="col" *ngFor="let skill of skills">
-                    <figure>
-                        <img src="assets/logos/{{skill.fileName}}.svg" alt="{{skill.name}} logo">
-                        <figcaption>{{ skill.name }}</figcaption>
-                    </figure>
-                </div>
+        <div class="row mt-4 d-flex align-items-baseline justify-content-evenly flex-wrap">
+            <div class="col" *ngFor="let skill of skills">
+                <figure>
+                    <img id="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{skill.fileName}}/{{skill.fileName}}-original.svg" alt="{{skill.name}} logo" />
+                    <figcaption>{{ skill.name }}</figcaption>
+                </figure>
             </div>
         </div>
     </div>

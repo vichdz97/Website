@@ -10,25 +10,33 @@ import emailjs from '@emailjs/browser';
 })
 export class HomeComponent {
 
+    // svgs found here -> https://devicon.dev
     skills = [
-        { fileName: "c", name: "C Programming"},
-        { fileName: "c++", name: "C++"},
+        { fileName: "c", name: "C"},
+        { fileName: "cplusplus", name: "C++"},
+        { fileName: "csharp", name: "C#"},
+        { fileName: "dotnetcore", name: ".NET Core"},
         { fileName: "python", name: "Python"},
         { fileName: "java", name: "Java"},
-        { fileName: "spring-boot", name: "Spring Boot"},
-        { fileName: "html", name: "HTML"},
-        { fileName: "css", name: "CSS"},
+        { fileName: "spring", name: "Spring Boot"},
+        { fileName: "html5", name: "HTML"},
+        { fileName: "css3", name: "CSS"},
         { fileName: "javascript", name: "JavaScript"},
-        { fileName: "typescript", name: "TypeScript"},
+        { fileName: "nodejs", name: "Node.js"},
         { fileName: "react", name: "React"},
         { fileName: "angular", name: "Angular"},
+        { fileName: "typescript", name: "TypeScript"},
         { fileName: "bootstrap", name: "Bootstrap"},
         { fileName: "mysql", name: "MySQL" },
+        { fileName: "sqlite", name: "SQLite" },
         { fileName: "postman", name: "Postman"},
         { fileName: "git", name: "Git"},
-        { fileName: "vs", name: "VS Code"},
+        { fileName: "trello", name: "Trello"},
+        { fileName: "vscode", name: "VS Code"},
+        { fileName: "eclipse", name: "Eclipse"},
         { fileName: "intellij", name: "IntelliJ IDEA"},
-        { fileName: "android-studio", name: "Android Studio"}
+        { fileName: "clion", name: "CLion"},
+        { fileName: "androidstudio", name: "Android Studio"}
     ];
 
     projects = [
@@ -36,11 +44,11 @@ export class HomeComponent {
             title: "Authentication System", 
             img: "authsys-progress.png",
             tech: ["aws", "mysql", "java", "spring-boot", "angular", "bootstrap", "postman"],
-            description: `Designed a responsive web application that redirects the user 
+            description: `A responsive web application that redirects the user 
                         to the appropriate landing page given specific login credentials.`,
             // url: "http://authentication-system.s3-website.us-east-2.amazonaws.com/#/login",
             github: "https://github.com/vichdz97/Authentication-System"
-        }, 
+        },
         {
             title: "Calculator App",
             img: "calculator.png",
