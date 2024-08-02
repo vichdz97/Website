@@ -1,4 +1,15 @@
-<footer class="bg-dark">
+<footer id="mobile-view" class="bg-dark" [hidden]="hideMobileView()">
+    <div class="d-flex justify-content-around align-items-center">
+        <div id="dot"></div>
+        <a (click)="goTo('home')"><i id="home" class="bi bi-house-door"></i></a>
+        <a (click)="goTo('projects')"><i id="projects" class="bi bi-code"></i></a>
+        <a (click)="goTo('arcade')"><i id="arcade" class="bi bi-joystick"></i></a>
+        <a (click)="goTo('about')"><i id="about" class="bi bi-person"></i></a>
+        <a (click)="goTo('resume')" href="assets/pdfs/Resume - Victor Hernandez Jr.pdf" target="_blank"><i id="resume" class="bi bi-card-text"></i></a>
+    </div>
+</footer>
+
+<footer id="desktop-view" class="bg-dark" [hidden]="hideDesktopView()">
     <div class="container">
         <div class="links text-center">
             <a href="mailto:victorhernandezjr97@gmail.com?subject=Connecting with Victor Hernandez, Jr."><i class="bi bi-envelope-fill"></i></a>
@@ -6,6 +17,6 @@
             <a href="https://github.com/vichdz97" target="_blank"><i class="bi bi-github"></i></a>
             <a href="https://www.facebook.com/victorhernandez97/" target="_blank"><i class="bi bi-facebook"></i></a>
         </div>
-        <p class="copyright">&#169; 2024 Victor Hernandez, Jr.</p>
+        <p id="copyright">&#169; 2024 Victor Hernandez, Jr.</p>
     </div>
 </footer>

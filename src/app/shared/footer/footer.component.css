@@ -1,22 +1,31 @@
 footer {
-    padding: 4vw ;
+    padding: 20px;
 }
 
-.container {
-    text-align: center;
-}
-
-.links {
-    margin-bottom: 1em;
+#mobile-view {
+    position: sticky;
+    bottom: 0;
 }
 
 i {
-    margin: 1em;
-    font-size: 1.5em;
+    font-size: 25px;
+    font-weight: bolder;
 }
 
-i, .copyright {
+i, #copyright {
     color: gray;
+}
+
+#dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: 10px;
+    background-color: white;
+    position: absolute;
+    transition: 0.2s;
+    z-index: -1;
 }
 
 @media screen and (min-width: 960px) {
