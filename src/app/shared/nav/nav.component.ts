@@ -17,4 +17,8 @@ export class NavComponent {
     this.router.navigateByUrl(webpage);
   }
 
+  hideNavbar(): boolean {
+		return window.innerWidth < 960;
+	}
+
 }
