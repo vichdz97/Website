@@ -1,6 +1,6 @@
 # My Website Portfolio
 > [!NOTE]
-> Last updated August 01, 2024.
+> Last updated August 02, 2024.
 
 ## Live Demo
 Hi there! Make sure to check out my [website](https://victor-jr.com/). (:
