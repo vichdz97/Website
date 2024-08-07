@@ -13,7 +13,8 @@ export class ArcadeComponent {
       title: "Tic-Tac-Toe",
       img: "tic-tac-toe.png",
       tech: ["react", "typescript", "bootstrap"],
-      description: `A fun, competitive 2-Player game of Tic-Tac-Toe.`,
+      description: `Challenge a friend in this fast-paced Tic-Tac-Toe duel 
+                    and see who can claim victory first!`,
       url: "https://tic-tac-toe.victor-jr.com",
       github: "https://github.com/vichdz97/tic-tac-toe"
     },
@@ -29,8 +30,7 @@ export class ArcadeComponent {
       title: "Piano Tap",
       img: "piano-tap.png",
       tech: ["html", "css", "javascript"],
-      description: `An interactive web application that allows the user
-                    to make music with the tap of a tile.`,
+      description: `Create your own music with a simple tap!`,
       url: "https://piano-tap.victor-jr.com",
       github: "https://github.com/vichdz97/Piano-Tap"
     },

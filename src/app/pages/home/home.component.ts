@@ -44,8 +44,8 @@ export class HomeComponent {
             title: "Pokémon Generator",
             img: "pokemon.png",
             tech: ["pokeapi", "react", "typescript", "bootstrap"],
-            description: `A random Pokémon generator that displays a Pokémon's sprite 
-                          and game info.`,
+            description: `Unleash any Pokémon with this random generator 
+                        that reveals its sprite and game stats.`,
             url: "https://pokemon-generator.victor-jr.com",
             github: "https://github.com/vichdz97/pokemon-generator"
           },
@@ -53,8 +53,8 @@ export class HomeComponent {
             title: "Calculator App",
             img: "calculator.png",
             tech: ["react", "typescript", "bootstrap"],
-            description: `A simple calculator app that performs various
-                        mathematical operations.`,
+            description: `Quickly tackle any math problem with this easy-to-use 
+                        calculator app that supports various operations.`,
             url: "https://calculator-app.victor-jr.com",
             github: "https://github.com/vichdz97/react-calculator"
         }
@@ -65,7 +65,8 @@ export class HomeComponent {
           title: "Tic-Tac-Toe",
           img: "tic-tac-toe.png",
           tech: ["react", "typescript", "bootstrap"],
-          description: `A fun, competitive 2-Player game of Tic-Tac-Toe.`,
+          description: `Challenge a friend in this fast-paced Tic-Tac-Toe duel 
+                        and see who can claim victory first!`,
           url: "https://tic-tac-toe.victor-jr.com",
           github: "https://github.com/vichdz97/tic-tac-toe"
         },
