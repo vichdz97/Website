@@ -12,6 +12,7 @@ export class HomeComponent {
 
     // svgs found here -> https://devicon.dev
     skills = [
+        { fileName: "amazonwebservices", name: "AWS"},
         { fileName: "c", name: "C"},
         { fileName: "cplusplus", name: "C++"},
         { fileName: "csharp", name: "C#"},

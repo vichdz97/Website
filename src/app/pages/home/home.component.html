@@ -56,7 +56,12 @@
         <div class="row mt-4 d-flex align-items-baseline justify-content-evenly flex-wrap">
             <div class="col" *ngFor="let skill of skills">
                 <figure>
-                    <img id="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{skill.fileName}}/{{skill.fileName}}-original.svg" alt="{{skill.name}} logo" />
+                    <ng-container *ngIf="skill.name == 'AWS'; else notAWS">
+                        <img id="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{skill.fileName}}/{{skill.fileName}}-original-wordmark.svg" alt="{{skill.name}} logo" />
+                    </ng-container>
+                    <ng-template #notAWS>
+                        <img id="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{skill.fileName}}/{{skill.fileName}}-original.svg" alt="{{skill.name}} logo" />
+                    </ng-template>
                     <figcaption>{{ skill.name }}</figcaption>
                 </figure>
             </div>
