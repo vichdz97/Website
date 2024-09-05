@@ -40,6 +40,15 @@ export class HomeComponent {
     ];
 
     projects = [
+        { 
+            title: "Authentication System", 
+            img: "authsys.png",
+            tech: ["aws", "angular", "bootstrap", "spring-boot", "mysql", "postman"],
+            description: `A dynamic web app that redirects users to the 
+                          correct landing page based on their login credentials.`,
+            url: "http://authentication-system.s3-website.us-east-2.amazonaws.com",
+            github: "https://github.com/vichdz97/Authentication-System"
+        },
         {
             title: "Pokémon Generator",
             img: "pokemon.png",
@@ -48,15 +57,6 @@ export class HomeComponent {
                         that reveals its sprite and game stats.`,
             url: "https://pokemon-generator.victor-jr.com",
             github: "https://github.com/vichdz97/pokemon-generator"
-          },
-        {
-            title: "Calculator App",
-            img: "calculator.png",
-            tech: ["react", "typescript", "bootstrap"],
-            description: `Quickly tackle any math problem with this easy-to-use 
-                        calculator app that supports various operations.`,
-            url: "https://calculator-app.victor-jr.com",
-            github: "https://github.com/vichdz97/react-calculator"
         }
     ];
 

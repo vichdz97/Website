@@ -9,6 +9,15 @@ import { Title } from '@angular/platform-browser';
 export class ProjectsComponent {
 
   projects = [
+    { 
+      title: "Authentication System", 
+      img: "authsys.png",
+      tech: ["aws", "angular", "bootstrap", "spring-boot", "mysql", "postman"],
+      description: `A dynamic web app that redirects users to the 
+                    correct landing page based on their login credentials.`,
+      url: "http://authentication-system.s3-website.us-east-2.amazonaws.com",
+      github: "https://github.com/vichdz97/Authentication-System"
+    },
     {
       title: "Pokémon Generator",
       img: "pokemon.png",
@@ -26,15 +35,6 @@ export class ProjectsComponent {
                     mathematical operations.`,
       url: "https://calculator-app.victor-jr.com",
       github: "https://github.com/vichdz97/react-calculator"
-    },
-    { 
-      title: "Authentication System", 
-      img: "authsys-progress.png",
-      tech: ["aws", "mysql", "java", "spring-boot", "angular", "bootstrap", "postman"],
-      description: `A dynamic web app that redirects users to the 
-                    correct landing page based on their login credentials.`,
-      // url: "http://authentication-system.s3-website.us-east-2.amazonaws.com/#/login",
-      github: "https://github.com/vichdz97/Authentication-System"
     }
   ];
 
