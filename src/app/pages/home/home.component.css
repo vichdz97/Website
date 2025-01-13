@@ -1,26 +1,23 @@
 /*** MOBILE VIEW ***/
 
 /*** HEADSHOT & SUMMARY ***/
+.summary {
+    min-width: auto;
+    margin: 5em auto 10em;
+    text-align: center;
+}
+
+.info {
+    font-size: 1.2em;
+}
+
 #headshot {
     width: 45vw;
     height: 45vw;
     object-fit: cover;
     object-position: 0 40%;
     border-radius: 50%;
-}
-
-.summary {
-    min-width: auto;
-    margin: 10em auto;
-    text-align: center;
-}
-
-.image {
     margin: 5vw;
-}
-
-.info, .bi {
-    font-size: 1.2em;
 }
 
 .links {
@@ -29,6 +26,7 @@
 }
 
 .bi {
+    font-size: 1.2em;
     transition: 0.3s;
 }
 
@@ -139,30 +137,34 @@ button {
     
     /*** HEADSHOT & SUMMARY ***/
     .summary{
-        max-width: 960px;
-        margin: 17vw auto;
+        margin: 20vw auto 17vw;
         text-align: left;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
     }
 
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 50vw;
+        margin-right: 7vw;
+        font-size: 2vw;
+    }
+    
     #headshot {
         width: 30vw;
         height: 30vw;
-    }
-
-    .image {
         margin: 0 5vw;
-    }
-
-    .info, .bi {
-        font-size: 2vw;
+        position: absolute;
+        left: 7vw;
     }
 
     .links {
         width: 50%;
         justify-content: space-between;
+    }
+
+    .bi {
+        font-size: 2vw;
     }
 
     /*** ABOUT ME ***/
