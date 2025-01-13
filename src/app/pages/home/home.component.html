@@ -56,12 +56,7 @@
         <div class="row mt-4 d-flex align-items-baseline justify-content-evenly flex-wrap">
             <div class="col" *ngFor="let skill of skills">
                 <figure>
-                    <ng-container *ngIf="skill.name == 'AWS'; else notAWS">
-                        <img id="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{skill.fileName}}/{{skill.fileName}}-original-wordmark.svg" alt="{{skill.name}} logo" />
-                    </ng-container>
-                    <ng-template #notAWS>
-                        <img id="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{skill.fileName}}/{{skill.fileName}}-original.svg" alt="{{skill.name}} logo" />
-                    </ng-template>
+                    <app-tech-logos [id]="'skill-logo'" [name]="skill.fileName"></app-tech-logos>
                     <figcaption>{{ skill.name }}</figcaption>
                 </figure>
             </div>
@@ -86,7 +81,7 @@
                         <h6>Technologies Used:</h6>
                         <div class="m-2 d-flex justify-content-evenly align-items-center">
                             <div *ngFor="let techName of proj.tech">
-                                <img src="assets/logos/{{techName}}.svg" alt="Tech logo" class="tech-used">
+                                <app-tech-logos [class]="'tech-used'" [name]="techName"></app-tech-logos>
                             </div>
                         </div>
                     </ng-container>
@@ -94,7 +89,7 @@
                         <h6 class="d-flex align-items-center">
                             Technologies Used:
                             <div *ngFor="let techName of proj.tech">
-                                <img src="assets/logos/{{techName}}.svg" alt="Tech logo" class="tech-used" id="sameline-img">
+                                <app-tech-logos [class]="'tech-used'" [name]="techName"></app-tech-logos>
                             </div>
                         </h6>
                     </ng-template>
@@ -126,7 +121,7 @@
                     <h6 class="d-flex align-items-center">
                         Technologies Used:
                         <div *ngFor="let techName of game.tech">
-                            <img src="assets/logos/{{techName}}.svg" alt="Tech logo" class="tech-used" id="sameline-img">
+                            <app-tech-logos [class]="'tech-used'" [name]="techName"></app-tech-logos>
                         </div>
                     </h6>
                     <p>{{game.description}}</p>
