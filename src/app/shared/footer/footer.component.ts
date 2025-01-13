@@ -9,16 +9,17 @@ import { Router } from '@angular/router';
 export class FooterComponent {
 
 	icons!: HTMLCollectionOf<Element>;
+	currentPage: string = window.location.href.split('/').pop()!;
 
 	constructor(private router: Router) {}
 
 	ngOnInit(): void {
 		this.icons = document.getElementById('mobile-view')?.getElementsByClassName('bi')!;
-		this.icons.namedItem('home')?.setAttribute('style', 'color: white;');
+		this.icons.namedItem(this.currentPage)?.setAttribute('style', 'color: white;');
 
-		const dot = document.getElementById('dot');
-		const homeRect = document.getElementById('home')?.getBoundingClientRect();
-		dot!.style.left = homeRect?.left + 'px';
+		const rect = document.getElementById(this.currentPage)?.getBoundingClientRect()!;
+		const dot = document.getElementById('dot')!;
+		dot.style.left = rect.left + 'px';
 	}
 
 	hideDesktopView(): boolean {
