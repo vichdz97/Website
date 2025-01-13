@@ -72,12 +72,6 @@ figure {
     text-align: center;
 }
 
-#skill-logo {
-    width: 85px;
-    height: 85px;
-    margin-bottom: 5px;
-}
-
 /*** MY PROJECTS & ARCADE ***/
 .projects, .arcade {
     margin-bottom: 5em;
@@ -99,11 +93,6 @@ figure {
     width: 100%;
     border-radius: 20px;
     border: 0.5px solid lightgray;
-}
-
-.tech-used {
-    width: 1.5em;
-    margin-left: 0.4em;
 }
 
 .box .bi {
@@ -189,16 +178,6 @@ button {
         text-align: left;
     }
 
-    #skill-logo {
-        width: 100px;
-        height: 100px;
-        transition: 0.5s;
-    }
-
-    #skill-logo:hover {
-        transform: translateY(-5%);
-    }
-
     /*** MY PROJECTS & ARCADE ***/
     .projects, .arcade {
         margin-bottom: 10vw;
@@ -218,11 +197,6 @@ button {
 
     .box:hover {
         box-shadow: 10px 10px 20px lightgray;
-    }
-
-    .tech-used {
-        width: 3vw;
-        margin-left: 1.5vw;
     }
 
     .box .bi {
