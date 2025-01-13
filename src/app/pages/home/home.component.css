@@ -235,3 +235,14 @@ button {
         margin-top: 0;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .info {
+        margin-left: 42vw;
+        margin-right: 0;
+    }
+
+    #headshot {
+        margin-left: 5vw;
+    }
+}
