@@ -17,7 +17,7 @@
                         <h6>Technologies Used:</h6>
                         <div class="m-2 d-flex justify-content-evenly align-items-center">
                             <div *ngFor="let techName of proj.tech">
-                                <img src="assets/logos/{{techName}}.svg" alt="Tech logo" class="tech-used">
+                                <app-tech-logos [class]="'tech-used'" [name]="techName"></app-tech-logos>
                             </div>
                         </div>
                     </ng-container>
@@ -25,7 +25,7 @@
                         <h6 class="d-flex align-items-center">
                             Technologies Used:
                             <div *ngFor="let techName of proj.tech">
-                                <img src="assets/logos/{{techName}}.svg" alt="Tech logo" class="tech-used" id="sameline-img">
+                                <app-tech-logos [class]="'tech-used'" [name]="techName"></app-tech-logos>
                             </div>
                         </h6>
                     </ng-template>
