@@ -16,6 +16,7 @@ import { ErrorComponent } from './pages/error/error.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { InlineErrorComponent } from './shared/inline-error/inline-error.component';
 import { ArcadeComponent } from './pages/arcade/arcade.component';
+import { TechLogosComponent } from './shared/tech-logos/tech-logos.component';
 
 
 
@@ -29,7 +30,8 @@ import { ArcadeComponent } from './pages/arcade/arcade.component';
     ErrorComponent,
     FooterComponent,
     InlineErrorComponent,
-    ArcadeComponent
+    ArcadeComponent,
+    TechLogosComponent
   ],
   imports: [
     BrowserModule,

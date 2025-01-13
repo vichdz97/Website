@@ -1,0 +1,29 @@
+/*** MOBILE VIEW ***/
+#skill-logo {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 5px;
+}
+
+.tech-used {
+    width: 1.5em;
+    margin-left: 0.4em;
+}
+
+/*** DESKTOP VIEW ***/
+@media screen and (min-width: 960px) {
+    #skill-logo {
+        width: 100px;
+        height: 100px;
+        transition: 0.5s;
+    }
+
+    #skill-logo:hover {
+        transform: translateY(-5%);
+    }
+
+    .tech-used {
+        width: 3vw;
+        margin-left: 1.5vw;
+    }
+}
