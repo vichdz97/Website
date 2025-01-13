@@ -17,11 +17,6 @@
     border: 0.5px solid lightgray;
 }
 
-.tech-used {
-    width: 1.5em;
-    margin-left: 0.4em;
-}
-
 i {
     font-size: 1.5em;
 }
@@ -29,10 +24,6 @@ i {
 @media screen and (min-width: 760px) {
     .box {
         min-width: 400px;
-    }
-
-    #sameline-img {
-        margin: 0 1em;
     }
 }
 
@@ -46,11 +37,6 @@ i {
 
     .box:hover {
         box-shadow: 10px 10px 20px lightgray;
-    }
-
-    .tech-used {
-        width: 2.5em;
-        margin-left: 1.5vw;
     }
 
     i {
