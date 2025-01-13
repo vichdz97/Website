@@ -12,7 +12,7 @@ export class ProjectsComponent {
     { 
       title: "Authentication System", 
       img: "authsys.png",
-      tech: ["aws", "angular", "bootstrap", "spring-boot", "mysql", "postman"],
+      tech: ["amazonwebservices", "angular", "bootstrap", "spring", "mysql", "postman"],
       description: `A dynamic web app that redirects users to the 
                     correct landing page based on their login credentials.`,
       url: "http://authentication-system.s3-website.us-east-2.amazonaws.com",

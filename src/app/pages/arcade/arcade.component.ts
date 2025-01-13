@@ -21,7 +21,7 @@ export class ArcadeComponent {
     {
       title: "Flip 'N Match",
       img: "flip-n-match.png",
-      tech: ["html", "css", "javascript"],
+      tech: ["html5", "css3", "javascript"],
       description: `Try and beat the clock in this interactive card matching game!`,
       url: "https://flip-n-match.victor-jr.com",
       github: "https://github.com/vichdz97/flip-n-match"
@@ -29,7 +29,7 @@ export class ArcadeComponent {
     {
       title: "Piano Tap",
       img: "piano-tap.png",
-      tech: ["html", "css", "javascript"],
+      tech: ["html5", "css3", "javascript"],
       description: `Create your own music with a simple tap!`,
       url: "https://piano-tap.victor-jr.com",
       github: "https://github.com/vichdz97/Piano-Tap"
