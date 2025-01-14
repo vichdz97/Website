@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LucideAngularModule, Mail, Github, Linkedin, Facebook, House, Code, Joystick, UserRound, FileText, Globe } from 'lucide-angular';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -36,7 +37,8 @@ import { TechLogosComponent } from './shared/tech-logos/tech-logos.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    LucideAngularModule.pick({Mail, Github, Linkedin, Facebook, House, Code, Joystick, UserRound, FileText, Globe})
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy }
