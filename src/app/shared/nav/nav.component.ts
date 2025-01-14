@@ -16,8 +16,4 @@ export class NavComponent {
   isActive(link: string): string | boolean {
     return link === this.activeLink && "text-slate-100";
   }
-
-  hideNavbar(): boolean {
-		return window.innerWidth < 960;
-	}
 }
