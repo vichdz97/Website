@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -8,17 +7,17 @@ import { Router } from '@angular/router';
 })
 export class NavComponent {
 
-  isCollapsed: boolean = true;
+  activeLink: string = window.location.href.split('/').pop()!;
 
-  constructor(private router: Router) {}
+  setActiveLink(link: string): void {
+    this.activeLink = link;
+  }
 
-  redirectTo(webpage: string) {
-    this.isCollapsed = true;
-    this.router.navigateByUrl(webpage);
+  isActive(link: string): string | boolean {
+    return link === this.activeLink && "text-slate-100";
   }
 
   hideNavbar(): boolean {
 		return window.innerWidth < 960;
 	}
-
 }
