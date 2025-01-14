@@ -1,22 +1,41 @@
-<footer id="mobile-view" class="bg-dark" [hidden]="hideMobileView()">
-    <div class="d-flex justify-content-around align-items-center">
-        <div id="dot"></div>
-        <a (click)="goTo('home')"><i id="home" class="bi bi-house-door"></i></a>
-        <a (click)="goTo('projects')"><i id="projects" class="bi bi-code"></i></a>
-        <a (click)="goTo('arcade')"><i id="arcade" class="bi bi-joystick"></i></a>
-        <a (click)="goTo('about')"><i id="about" class="bi bi-person"></i></a>
-        <a (click)="goTo('resume')" href="assets/pdfs/Resume - Victor Hernandez Jr.pdf" target="_blank"><i id="resume" class="bi bi-card-text"></i></a>
-    </div>
-</footer>
+<!-- MOBILE -->
+<div class="block lg:hidden">
+    <nav class="fixed bottom-0 w-full bg-slate-900 text-slate-400 py-7">
+        <ul class="flex justify-evenly">
+            <li><a class="transition-colors hover:text-slate-100 {{isActive('home')}}" title="Home" (click)="setActiveLink('home')" routerLink="/home"><lucide-icon name="house" [strokeWidth]="1.5"></lucide-icon></a></li>
+            <li><a class="transition-colors hover:text-slate-100 {{isActive('projects')}}" title="Projects" (click)="setActiveLink('projects')" routerLink="/projects"><lucide-icon name="code" [strokeWidth]="1.5"></lucide-icon></a></li>
+            <li><a class="transition-colors hover:text-slate-100 {{isActive('arcade')}}" title="Arcade" (click)="setActiveLink('arcade')" routerLink="/arcade"><lucide-icon name="joystick" [strokeWidth]="1.5"></lucide-icon></a></li>
+            <li><a class="transition-colors hover:text-slate-100 {{isActive('about')}}" title="About Me" (click)="setActiveLink('about')" routerLink="/about"><lucide-icon name="user-round" [strokeWidth]="1.5"></lucide-icon></a></li>
+            <li><a class="transition-colors hover:text-slate-100" title="Resume" href="assets/pdfs/Resume - Victor Hernandez Jr.pdf" target="_blank"><lucide-icon name="file-text" [strokeWidth]="1.5"></lucide-icon></a></li>
+        </ul>
+    </nav>
+</div>
 
-<footer id="desktop-view" class="bg-dark" [hidden]="hideDesktopView()">
-    <div class="container">
-        <div class="links text-center">
-            <a href="mailto:victorhernandezjr97@gmail.com?subject=Connecting with Victor Hernandez, Jr."><i class="bi bi-envelope-fill"></i></a>
-            <a href="http://linkedin.com/in/victorhernandezjr/" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/vichdz97" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="https://www.facebook.com/victorhernandez97/" target="_blank"><i class="bi bi-facebook"></i></a>
-        </div>
-        <p id="copyright">&#169; 2025 Victor Hernandez, Jr.</p>
-    </div>
-</footer>
+<!-- DESKTOP -->
+<div class="hidden lg:block">
+    <footer class="bg-slate-900 text-slate-400 p-10 flex items-center justify-between">
+        <p class="text-sm">&#169; 2025 Victor Hernandez, Jr.</p>
+        <ul class="flex">
+            <li class="ml-10">
+                <a class="transition-colors hover:text-slate-100" title="Email" href="mailto:victorhernandezjr97@gmail.com?subject=Connecting with Victor Hernandez, Jr.">
+                    <lucide-icon name="mail" [strokeWidth]="1.5" />
+                </a>
+            </li>
+            <li class="ml-10">
+                <a class="transition-colors hover:text-slate-100" title="GitHub" href="https://github.com/vichdz97" target="_blank">
+                    <lucide-icon name="github" [strokeWidth]="1.5" />
+                </a>
+            </li>
+            <li class="ml-10">
+                <a class="transition-colors hover:text-slate-100" title="LinkedIn" href="http://linkedin.com/in/victorhernandezjr/" target="_blank">
+                    <lucide-icon name="linkedin" [strokeWidth]="1.5" />
+                </a>
+            </li>
+            <li class="ml-10">
+                <a class="transition-colors hover:text-slate-100" title="Facebook" href="https://www.facebook.com/victorhernandez97/" target="_blank">
+                    <lucide-icon name="facebook" [strokeWidth]="1.5" />
+                </a>
+            </li>
+        </ul>
+    </footer>
+</div>
