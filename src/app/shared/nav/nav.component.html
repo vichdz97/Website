@@ -1,35 +1,12 @@
-<nav class="navbar fixed-top navbar-expand-lg bg-dark" [hidden]="hideNavbar()">
-    <div class="container-fluid">
-        <a id="logo" class="navbar-brand mx-3" role="button" (click)="redirectTo('/')">VH</a>
-
-        <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed">
-            &#9776;
-        </button>
-
-        <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li></li>
-            </ul>
-  
-            <span class="navbar-text">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" role="button" (click)="redirectTo('/home')">Home</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" role="button" (click)="redirectTo('/projects')">Projects</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" role="button" (click)="redirectTo('/arcade')">Arcade</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" role="button" (click)="redirectTo('/about')">About</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" role="button" href="assets/pdfs/Resume - Victor Hernandez Jr.pdf" target="_blank">Resume</a>
-                    </li>
-                </ul>
-            </span>
-        </div>
-    </div>
-</nav>
+<div class="hidden lg:block">
+    <nav class="bg-slate-900 text-slate-400 px-10 py-5 fixed top-0 w-full flex items-center justify-between">
+        <a class="text-4xl transition-colors hover:text-slate-100" (click)="setActiveLink('home')" routerLink="/">VH</a>
+        <ul class="text-xl flex">
+            <li class="ml-10"><a class="transition-colors hover:text-slate-100 {{isActive('home')}}" (click)="setActiveLink('home')" routerLink="/home">Home</a></li>
+            <li class="ml-10"><a class="transition-colors hover:text-slate-100 {{isActive('projects')}}" (click)="setActiveLink('projects')" routerLink="/projects">Projects</a></li>
+            <li class="ml-10"><a class="transition-colors hover:text-slate-100 {{isActive('arcade')}}" (click)="setActiveLink('arcade')" routerLink="/arcade">Arcade</a></li>
+            <li class="ml-10"><a class="transition-colors hover:text-slate-100 {{isActive('about')}}" (click)="setActiveLink('about')" routerLink="/about">About</a></li>
+            <li class="ml-10"><a class="transition-colors hover:text-slate-100" href="assets/pdfs/Resume - Victor Hernandez Jr.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+</div>

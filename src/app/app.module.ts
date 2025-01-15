@@ -2,10 +2,10 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LucideAngularModule, Mail, Github, Linkedin, Facebook, House, Code, Joystick, UserRound, FileText, Cog, Globe } from 'lucide-angular';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -17,6 +17,12 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { InlineErrorComponent } from './shared/inline-error/inline-error.component';
 import { ArcadeComponent } from './pages/arcade/arcade.component';
 import { TechLogosComponent } from './shared/tech-logos/tech-logos.component';
+import { IntroComponent } from './pages/home/intro/intro.component';
+import { AboutMeComponent } from './pages/home/about-me/about-me.component';
+import { MySkillsComponent } from './pages/home/my-skills/my-skills.component';
+import { MyProjectsComponent } from './pages/home/my-projects/my-projects.component';
+import { MyArcadeComponent } from './pages/home/my-arcade/my-arcade.component';
+import { ContactMeComponent } from './pages/home/contact-me/contact-me.component';
 
 
 
@@ -31,14 +37,20 @@ import { TechLogosComponent } from './shared/tech-logos/tech-logos.component';
     FooterComponent,
     InlineErrorComponent,
     ArcadeComponent,
-    TechLogosComponent
+    TechLogosComponent,
+    IntroComponent,
+    AboutMeComponent,
+    MySkillsComponent,
+    MyProjectsComponent,
+    MyArcadeComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    LucideAngularModule.pick({Mail, Github, Linkedin, Facebook, House, Code, Joystick, UserRound, FileText, Cog, Globe})
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy }
