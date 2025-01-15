@@ -17,7 +17,7 @@
                 </ng-template>
                 <ng-container *ngIf="game.tech.length >= 4; else sameline">
                     <h3>Technologies Used:</h3>
-                    <div class="my-3 grid grid-cols-{{game.tech.length.toString()}} place-items-center">
+                    <div class="my-3 flex items-center justify-evenly">
                         <div *ngFor="let techName of game.tech">
                             <app-tech-logos [class]="'[8vw] h-[8vw] md:w-[3vw] md:h-[3vw]'" [name]="techName" />
                         </div>
