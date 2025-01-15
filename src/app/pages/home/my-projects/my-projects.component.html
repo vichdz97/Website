@@ -1,0 +1,43 @@
+<div class="bg-blue-100 text-slate-900 text-xl text-center font-medium flex flex-col justify-center px-5 py-10 lg:text-justify lg:px-48 lg:py-24">
+    <div class="flex flex-col items-center justify-center lg:flex-row lg:justify-start">
+        <lucide-icon name="code" [size]="32" [strokeWidth]="1.5" />
+        <h1 class="text-3xl mt-4 lg:mt-0 lg:ml-3">My Projects</h1>
+    </div>
+    <div class="my-5 flex flex-col gap-5 md:flex-row">
+        <div class="bg-slate-100 flex flex-col justify-between text-left text-lg rounded-2xl p-5 shadow-md lg:w-1/2" *ngFor="let proj of projects">
+            <div>
+                <h2 class="text-2xl">{{ proj.title }}</h2>
+                <ng-container *ngIf="proj.url; else noUrl">
+                    <a href="{{proj.url}}" target="_blank">
+                        <img class="my-5 object-scale-down border rounded-lg" src="assets/images/{{proj.img}}" alt="Screenshot of {{proj.title}}">
+                    </a>
+                </ng-container>
+                <ng-template #noUrl>
+                    <img class="my-5 object-scale-down border rounded-lg" src="assets/images/{{proj.img}}" alt="Screenshot of {{proj.title}}">
+                </ng-template>
+                <ng-container *ngIf="proj.tech.length >= 4; else sameline">
+                    <h3>Technologies Used:</h3>
+                    <div class="my-3 grid grid-cols-{{proj.tech.length.toString()}} place-items-center">
+                        <div *ngFor="let techName of proj.tech">
+                            <app-tech-logos [class]="'[8vw] h-[8vw] md:w-[3vw] md:h-[3vw]'" [name]="techName" />
+                        </div>
+                    </div>
+                </ng-container>
+                <ng-template #sameline>
+                    <div class="flex items-center mb-3">
+                        <h3>Technologies Used:</h3>
+                        <div *ngFor="let techName of proj.tech">
+                            <app-tech-logos [class]="'ml-5 w-[8vw] h-[8vw] md:w-[3vw] md:h-[3vw]'" [name]="techName" />
+                        </div>
+                    </div>
+                </ng-template>
+                <p class="font-normal text-justify">{{ proj.description }}</p>
+            </div>
+            <div class="text-blue-500 flex justify-end mt-3">
+                <a class="hover:text-blue-700 transition-colors" href="{{proj.url}}" target="_blank" title="Live Demo" [hidden]="!proj.url"><lucide-icon name="globe" [size]="32" [strokeWidth]="1.5" /></a>
+                <a class="hover:text-blue-700 transition-colors ml-5" href="{{proj.github}}" target="_blank" title="GitHub"><lucide-icon name="github" [size]="32" [strokeWidth]="1.5" /></a>
+            </div>
+        </div>
+    </div>
+    <a class="mx-auto font-normal text-center text-xl text-slate-700 hover:text-slate-950 transition-colors" routerLink="/projects">View More ></a>
+</div>
