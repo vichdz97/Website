@@ -1,40 +1,39 @@
-<div class="container">
-    <div class="projects">
-        <h2 class="text-center">My Projects</h2>
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col box bg-light d-flex flex-column justify-content-between" *ngFor="let proj of projects">
-                    <h4>{{ proj.title }}</h4>
-                    <ng-container *ngIf="!proj.url; else link">
-                        <img src="assets/images/{{proj.img}}" alt="Screenshot of project" class="screenshot my-3">
-                    </ng-container>
-                    <ng-template #link>
-                        <a href="{{proj.url}}" target="_blank">
-                            <img src="assets/images/{{proj.img}}" alt="Screenshot of project" class="screenshot my-3">
-                        </a>
-                    </ng-template>
-                    <ng-container *ngIf="proj.tech.length >= 4; else sameline">
-                        <h6>Technologies Used:</h6>
-                        <div class="m-2 d-flex justify-content-evenly align-items-center">
-                            <div *ngFor="let techName of proj.tech">
-                                <app-tech-logos [class]="'tech-used'" [name]="techName"></app-tech-logos>
-                            </div>
+<div class="text-slate-900 text-xl text-center font-medium px-5 py-10 md:px-32 md:py-24">
+    <h1 class="text-3xl lg:hidden">My Projects</h1>
+    <div class="mt-10 mb-20 flex flex-col gap-10 lg:mb-0 lg:grid lg:grid-cols-2">
+        <div class="bg-blue-100 flex flex-col justify-between text-left text-lg rounded-2xl p-5 shadow-md"
+            *ngFor="let proj of projects">
+            <div>
+                <h2 class="text-2xl">{{ proj.title }}</h2>
+                <ng-container *ngIf="proj.url; else noUrl">
+                    <a href="{{proj.url}}" target="_blank">
+                        <img class="my-5 object-scale-down border rounded-lg" src="assets/images/{{proj.img}}" alt="Screenshot of {{proj.title}}">
+                    </a>
+                </ng-container>
+                <ng-template #noUrl>
+                    <img class="my-5 object-scale-down border rounded-lg" src="assets/images/{{proj.img}}" alt="Screenshot of {{proj.title}}">
+                </ng-template>
+                <ng-container *ngIf="proj.tech.length >= 4; else sameline">
+                    <h3>Technologies Used:</h3>
+                    <div class="my-3 flex items-center justify-evenly">
+                        <div *ngFor="let techName of proj.tech">
+                            <app-tech-logos [class]="'[8vw] h-[8vw] md:w-[3vw] md:h-[3vw]'" [name]="techName" />
                         </div>
-                    </ng-container>
-                    <ng-template #sameline>
-                        <h6 class="d-flex align-items-center">
-                            Technologies Used:
-                            <div *ngFor="let techName of proj.tech">
-                                <app-tech-logos [class]="'tech-used'" [name]="techName"></app-tech-logos>
-                            </div>
-                        </h6>
-                    </ng-template>
-                    <p>{{ proj.description }}</p>
-                    <div class="d-flex justify-content-end">
-                        <a href="{{proj.url}}" target="_blank" class="mx-4" [hidden]="!proj.url"><i class="bi bi-globe2"></i></a>
-                        <a href="{{proj.github}}" target="_blank"><i class="bi bi-github"></i></a>
                     </div>
-                </div>
+                </ng-container>
+                <ng-template #sameline>
+                    <div class="flex items-center mb-3">
+                        <h3>Technologies Used:</h3>
+                        <div *ngFor="let techName of proj.tech">
+                            <app-tech-logos [class]="'ml-5 w-[8vw] h-[8vw] md:w-[3vw] md:h-[3vw]'" [name]="techName" />
+                        </div>
+                    </div>
+                </ng-template>
+                <p class="font-normal text-justify">{{ proj.description }}</p>
+            </div>
+            <div class="text-blue-500 flex justify-end mt-3">
+                <a class="hover:text-blue-700 transition-colors" href="{{proj.url}}" target="_blank" title="Live Demo" [hidden]="!proj.url"><lucide-icon name="globe" [size]="32" [strokeWidth]="1.5" /></a>
+                <a class="hover:text-blue-700 transition-colors ml-5" href="{{proj.github}}" target="_blank" title="GitHub"><lucide-icon name="github" [size]="32" [strokeWidth]="1.5" /></a>
             </div>
         </div>
     </div>
