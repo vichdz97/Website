@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
   selector: 'app-my-projects',
@@ -28,4 +29,9 @@ export class MyProjectsComponent {
     }
   ];
 
+  constructor(private nav: NavigationService) {}
+
+  setActiveLink(link: string): void {
+    this.nav.activeLink = link;
+  }
 }

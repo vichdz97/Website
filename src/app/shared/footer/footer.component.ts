@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
 	selector: 'app-footer',
@@ -7,13 +8,13 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
-	activeLink: string = window.location.href.split('/').pop()!;
+	constructor(private nav: NavigationService) {}
 
 	setActiveLink(link: string): void {
-		this.activeLink = link;
+		this.nav.activeLink = link;
 	}
 
 	isActive(link: string): string | boolean {
-		return link === this.activeLink && "text-slate-100";
+		return link === this.nav.activeLink && "text-slate-100";
 	}
 }
