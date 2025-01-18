@@ -9,11 +9,11 @@
                 <h2 class="text-xl sm:text-2xl">{{ game.title }}</h2>
                 <ng-container *ngIf="game.url; else noUrl">
                     <a href="{{game.url}}" target="_blank">
-                        <img class="my-5 object-scale-down border rounded-lg" src="assets/images/{{game.img}}" alt="Screenshot of {{game.title}}">
+                        <img class="my-5 object-scale-down border rounded-lg" src="assets/screenshots/{{game.img}}" alt="Screenshot of {{game.title}}">
                     </a>
                 </ng-container>
                 <ng-template #noUrl>
-                    <img class="my-5 object-scale-down border rounded-lg" src="assets/images/{{game.img}}" alt="Screenshot of {{game.title}}">
+                    <img class="my-5 object-scale-down border rounded-lg" src="assets/screenshots/{{game.img}}" alt="Screenshot of {{game.title}}">
                 </ng-template>
                 <ng-container *ngIf="game.tech.length >= 4; else sameline">
                     <h3>Technologies Used:</h3>

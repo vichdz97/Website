@@ -7,11 +7,11 @@
                 <h2 class="text-xl sm:text-2xl">{{ proj.title }}</h2>
                 <ng-container *ngIf="proj.url; else noUrl">
                     <a href="{{proj.url}}" target="_blank">
-                        <img class="my-5 object-scale-down border rounded-lg" src="assets/images/{{proj.img}}" alt="Screenshot of {{proj.title}}">
+                        <img class="my-5 object-scale-down border rounded-lg" src="assets/screenshots/{{proj.img}}" alt="Screenshot of {{proj.title}}">
                     </a>
                 </ng-container>
                 <ng-template #noUrl>
-                    <img class="my-5 object-scale-down border rounded-lg" src="assets/images/{{proj.img}}" alt="Screenshot of {{proj.title}}">
+                    <img class="my-5 object-scale-down border rounded-lg" src="assets/screenshots/{{proj.img}}" alt="Screenshot of {{proj.title}}">
                 </ng-template>
                 <ng-container *ngIf="proj.tech.length >= 4; else sameline">
                     <h3>Technologies Used:</h3>
