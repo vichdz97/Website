@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
 
   projects = [
     { 
@@ -38,8 +39,11 @@ export class ProjectsComponent {
     }
   ];
 
-  constructor(private titleService: Title) {
+  constructor(private titleService: Title, private nav: NavigationService) {
     this.titleService.setTitle("Victor Hernandez, Jr. | Projects");
   }
 
+  ngOnInit(): void {
+    this.nav.activeLink = "projects";
+  }
 }

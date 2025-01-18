@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
   selector: 'app-arcade',
   templateUrl: './arcade.component.html',
   styleUrls: ['./arcade.component.css']
 })
-export class ArcadeComponent {
+export class ArcadeComponent implements OnInit {
 
   games = [
     {
@@ -36,7 +37,12 @@ export class ArcadeComponent {
     },
   ];
 
-  constructor(private titleServie: Title) {
+  constructor(private titleServie: Title, private nav: NavigationService) {
     titleServie.setTitle("Victor Hernandez, Jr. | Arcade");
   }
+  
+  ngOnInit(): void {
+      this.nav.activeLink = "arcade";
+  }
+
 }

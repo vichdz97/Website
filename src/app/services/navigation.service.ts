@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class NavigationService {
 
-  link: string = window.location.href.split('/').pop()!;
+  link!: string;
 
   constructor() { }
 

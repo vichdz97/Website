@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
   selector: 'app-my-arcade',
@@ -28,9 +27,4 @@ export class MyArcadeComponent {
     }
   ];
 
-  constructor(private nav: NavigationService) {}
-
-  setActiveLink(link: string): void {
-    this.nav.activeLink = link;
-  }
 }

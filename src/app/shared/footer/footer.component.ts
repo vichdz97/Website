@@ -10,10 +10,6 @@ export class FooterComponent {
 
 	constructor(private nav: NavigationService) {}
 
-	setActiveLink(link: string): void {
-		this.nav.activeLink = link;
-	}
-
 	isActive(link: string): string | boolean {
 		return link === this.nav.activeLink && "text-slate-100";
 	}
