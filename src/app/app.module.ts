@@ -5,7 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { LucideAngularModule, Mail, Github, Linkedin, Facebook, House, Code, Joystick, UserRound, FileText, Cog, Globe } from 'lucide-angular';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -24,7 +23,21 @@ import { MyProjectsComponent } from './pages/home/my-projects/my-projects.compon
 import { MyArcadeComponent } from './pages/home/my-arcade/my-arcade.component';
 import { ContactMeComponent } from './pages/home/contact-me/contact-me.component';
 
-
+import { 
+  LucideAngularModule, 
+  Mail, 
+  Github, 
+  Linkedin, 
+  Facebook, 
+  House, 
+  Code, 
+  Joystick, 
+  UserRound, 
+  FileText, 
+  Cog, 
+  Globe, 
+  Frown
+} from 'lucide-angular';
 
 @NgModule({
   declarations: [
@@ -50,7 +63,20 @@ import { ContactMeComponent } from './pages/home/contact-me/contact-me.component
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    LucideAngularModule.pick({Mail, Github, Linkedin, Facebook, House, Code, Joystick, UserRound, FileText, Cog, Globe})
+    LucideAngularModule.pick({
+      Mail, 
+      Github, 
+      Linkedin, 
+      Facebook, 
+      House, 
+      Code, 
+      Joystick, 
+      UserRound, 
+      FileText, 
+      Cog, 
+      Globe,
+      Frown
+    })
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy }
