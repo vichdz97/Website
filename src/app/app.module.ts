@@ -36,7 +36,8 @@ import {
   FileText, 
   Cog, 
   Globe, 
-  Frown
+  Frown,
+  ArrowRight
 } from 'lucide-angular';
 
 @NgModule({
@@ -75,7 +76,8 @@ import {
       FileText, 
       Cog, 
       Globe,
-      Frown
+      Frown,
+      ArrowRight
     })
   ],
   providers: [
