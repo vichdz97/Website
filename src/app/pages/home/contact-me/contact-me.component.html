@@ -1,4 +1,4 @@
-<div class="h-[100vh] bg-blue-100 text-slate-900 text-center flex flex-col justify-center px-5 pt-10 pb-32 md:px-32 md:py-24 lg:text-justify">
+<div class="h-[100vh] bg-blue-100 text-dark-blue/90 text-center flex flex-col justify-center px-5 pt-10 pb-32 md:px-32 md:py-24 lg:text-justify">
     <div class="flex flex-col lg:flex-row items-center justify-center lg:justify-start">
         <lucide-icon name="mail" [size]="32" [strokeWidth]="1.5" />
         <h1 class="font-medium text-2xl sm:text-3xl mt-4 lg:mt-0 lg:ml-3">Contact Me</h1>
@@ -7,28 +7,28 @@
         <div class="lg:col-span-2">
             <label for="fullName">Name</label>
             <input type="text" id="fullName" formControlName="name" placeholder="John Doe" required
-                class="bg-white w-full rounded-lg px-3 py-1 my-1 text-slate-900 outline outline-1 outline-slate-300 placeholder:text-slate-400 focus:outline focus:outline-2 focus:outline-blue-500"
+                class="bg-white w-full rounded-lg px-3 py-1 my-1 text-dark-blue/90 outline outline-1 outline-slate-300 placeholder:text-slate-400 focus:outline focus:outline-2 focus:outline-blue-500"
                 [ngStyle]="hasErrors(nameControl) ? {'border-color':'#dc3545'} : {}" />
             <app-inline-error [control]="nameControl" />
         </div>
         <div class="lg:col-span-2">
             <label for="emailAddress">Email</label>
             <input type="email" id="emailAddress" formControlName="email" placeholder="johndoe@gmail.com" required
-                class="bg-white w-full rounded-lg px-3 py-1 my-1 text-slate-900 outline outline-1 outline-slate-300 placeholder:text-slate-400 focus:outline focus:outline-2 focus:outline-blue-500"
+                class="bg-white w-full rounded-lg px-3 py-1 my-1 text-dark-blue/90 outline outline-1 outline-slate-300 placeholder:text-slate-400 focus:outline focus:outline-2 focus:outline-blue-500"
                 [ngStyle]="hasErrors(emailControl) ? {'border-color':'#dc3545'} : {}" />
             <app-inline-error [control]="emailControl" />
         </div>
         <div class="lg:col-span-4">
             <label for="subjectTitle">Subject</label>
             <input type="text" id="subjectTitle" formControlName="subject" placeholder="Nice Website!" required
-                class="bg-white w-full rounded-lg px-3 py-1 my-1 text-slate-900 outline outline-1 outline-slate-300 placeholder:text-slate-400 focus:outline focus:outline-2 focus:outline-blue-500"
+                class="bg-white w-full rounded-lg px-3 py-1 my-1 text-dark-blue/90 outline outline-1 outline-slate-300 placeholder:text-slate-400 focus:outline focus:outline-2 focus:outline-blue-500"
                 [ngStyle]="hasErrors(subjectControl) ? {'border-color':'#dc3545'} : {}" />
             <app-inline-error [control]="subjectControl" />
         </div>
         <div class="lg:col-span-4">
             <label for="messageArea">Message</label>
             <textarea id="messageArea" formControlName="message" rows="3" placeholder="Hey Victor, nice website! Let's get in touch and collab on a new project soon!" required
-                class="bg-white w-full rounded-lg px-3 py-1 mt-1 text-slate-900 outline outline-1 outline-slate-300 placeholder:text-slate-400 focus:outline focus:outline-2 focus:outline-blue-500"
+                class="bg-white w-full rounded-lg px-3 py-1 mt-1 text-dark-blue/90 outline outline-1 outline-slate-300 placeholder:text-slate-400 focus:outline focus:outline-2 focus:outline-blue-500"
                 [ngStyle]="hasErrors(messageControl) ? {'border-color':'#dc3545'} : {}"></textarea>
             <app-inline-error [control]="messageControl" />
         </div>
