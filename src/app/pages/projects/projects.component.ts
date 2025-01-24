@@ -20,6 +20,15 @@ export class ProjectsComponent implements OnInit {
       github: "https://github.com/vichdz97/Authentication-System"
     },
     {
+      title: "Weather App",
+      img: "weather.png",
+      tech: ["openweatherapi", "react", "typescript", "tailwindcss"],
+      description: `An intuitive weather app inspired by Apple's weather interface, 
+                    providing real-time forecasts and detailed weather information.`,
+      url: "https://weather-app.victor-jr.com",
+      github: "https://github.com/vichdz97/weather-app"
+    },
+    {
       title: "Pokémon Generator",
       img: "pokemon.png",
       tech: ["pokeapi", "react", "typescript", "bootstrap"],
