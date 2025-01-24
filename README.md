@@ -1,9 +1,13 @@
 # My Website Portfolio
 > [!NOTE]
-> Last updated January 20, 2025.
+> Last updated January 24, 2025.
 
 ## Summary
-Hi there! My website is a great place to check out projects that I've worked on that have enhanced my web development skills. You could even spend some time playing games in my virtual arcade! Feel free to reach out if you'd love to collab on a future project!
+Hello World! 
+
+My website is a great place to check out projects that I've worked on that have enhanced my web development skills. You could even spend some time playing games in my virtual arcade! 
+
+Feel free to reach out if you'd love to collab on a future project!
 
 ## Live Demo
 I would appreciate any feedback you might have about my [website](https://victor-jr.com/). (:
