@@ -46,11 +46,15 @@ export class MySkillsComponent implements OnInit {
     { fileName: "mysql", name: "MySQL" },
     { fileName: "sqlite", name: "SQLite" },
 
+    // Data Formats
+    { fileName: "json", name: "JSON" },
+
+    // Package Managers
+    { fileName: "npm", name: "npm" },
+
     // IDEs
     { fileName: "androidstudio", name: "Android Studio" },
-    { fileName: "clion", name: "CLion" },
     { fileName: "eclipse", name: "Eclipse" },
-    { fileName: "intellij", name: "IntelliJ IDEA" },
     { fileName: "vscode", name: "VS Code" },
 
     // Version Control
