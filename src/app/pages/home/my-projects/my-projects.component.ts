@@ -11,10 +11,10 @@ export class MyProjectsComponent {
     { 
       title: "Authentication System", 
       img: "authsys.png",
-      tech: ["amazonwebservices", "angular", "bootstrap", "spring", "mysql", "postman"],
+      tech: ["angular", "firebase", "json", "postman", "tailwindcss"],
       description: `A dynamic web app that redirects users to the 
                     correct landing page based on their login credentials.`,
-      url: "http://authentication-system.s3-website.us-east-2.amazonaws.com",
+      url: "https://vichdz97.github.io/projects/authentication-system",
       github: "https://github.com/vichdz97/Authentication-System"
     },
     {
@@ -25,7 +25,7 @@ export class MyProjectsComponent {
                     providing real-time forecasts and detailed weather information.`,
       url: "https://weather-app.victor-jr.com",
       github: "https://github.com/vichdz97/weather-app"
-    },
+    }
   ];
 
 }
