@@ -13,38 +13,46 @@ interface Skills {
 export class MySkillsComponent implements OnInit {
 
   // svgs found here -> https://devicon.dev
-  skills: Array<Skills> = [
+  skills: Skills[] = [
     // Frontend Languages
     { fileName: "html5", name: "HTML" },
     { fileName: "css3", name: "CSS" },
     { fileName: "javascript", name: "JavaScript" },
     { fileName: "typescript", name: "TypeScript" },
 
+    // Programming Languages
+    { fileName: "cplusplus", name: "C++" },
+    { fileName: "java", name: "Java" },
+    { fileName: "python", name: "Python" },
+
     // Frontend Frameworks
     { fileName: "angular", name: "Angular" },
     { fileName: "nextjs", name: "Next.js" },
-    { fileName: "react", name: "React" },
-    { fileName: "react", name: "React Native" },
+    { fileName: "react", name: "React (Native)" },
+
+    // Backend Development
+    { fileName: "nodejs", name: "Node.js" },
+    { fileName: "spring", name: "Spring Boot" },
+    { fileName: "express", name: "Express.js"},
+    
+    // Testing Frameworks
+    { fileName: "jest", name: "Jest"},
+    { fileName: "junit", name: "JUnit"},
 
     // Styling Tools
     { fileName: "bootstrap", name: "Bootstrap" },
     { fileName: "tailwindcss", name: "Tailwind CSS" },
 
-    // Backend Development
-    { fileName: "nodejs", name: "Node.js" },
-
-    // Programming Languages
-    { fileName: "c", name: "C" },
-    { fileName: "cplusplus", name: "C++" },
-    { fileName: "java", name: "Java" },
-    { fileName: "python", name: "Python" },
-
-    // Frameworks & Libraries
-    { fileName: "spring", name: "Spring Boot" },
-
     // Databases
     { fileName: "mysql", name: "MySQL" },
     { fileName: "sqlite", name: "SQLite" },
+
+    // Cloud Platforms
+    { fileName: "amazonwebservices", name: "AWS" },
+    { fileName: "firebase", name: "Firebase" },
+
+    // API & Development Tools
+    { fileName: "postman", name: "Postman" },
 
     // Data Formats
     { fileName: "json", name: "JSON" },
@@ -53,23 +61,12 @@ export class MySkillsComponent implements OnInit {
     { fileName: "npm", name: "npm" },
 
     // IDEs
-    { fileName: "androidstudio", name: "Android Studio" },
     { fileName: "eclipse", name: "Eclipse" },
     { fileName: "vscode", name: "VS Code" },
 
     // Version Control
-    { fileName: "git", name: "Git" },
-
-    // API & Development Tools
-    { fileName: "postman", name: "Postman" },
-
-    // Cloud Platforms
-    { fileName: "amazonwebservices", name: "AWS" },
-
-    // Project Management
-    { fileName: "trello", name: "Trello" },
+    { fileName: "git", name: "Git" }
   ];
-
 
   ngOnInit(): void {
     // `localeCompare` returns a number indicating whether 'a' string comes 

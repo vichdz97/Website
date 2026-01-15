@@ -2,10 +2,15 @@
     <img class="{{class}} md:w-[8vw]" src="assets/logos/{{name}}.svg" alt="{{name}} logo">
 </ng-container>
 <ng-template #notAPI>
-    <ng-container *ngIf="name.includes('amazon') || name.includes('npm'); else notWordmark">
+    <ng-container *ngIf="name.includes('amazon') || name.includes('junit') || name.includes('nextjs') || name.includes('npm'); else notWordmark">
         <img class="{{class}}" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{name}}/{{name}}-original-wordmark.svg" alt="{{name}} logo" />
     </ng-container>
     <ng-template #notWordmark>
-        <img class="{{class}}" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{name}}/{{name}}-original.svg" alt="{{name}} logo" />
+        <ng-container *ngIf="name.includes('jest'); else notPlain">
+            <img class="{{class}}" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{name}}/{{name}}-plain.svg" alt="{{name}} logo" />
+        </ng-container>
+        <ng-template #notPlain>
+            <img class="{{class}}" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{name}}/{{name}}-original.svg" alt="{{name}} logo" />
+        </ng-template>
     </ng-template>
 </ng-template>
