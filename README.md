@@ -1,6 +1,6 @@
 # My Website Portfolio
 > [!NOTE]
-> Last updated January 24, 2025.
+> Last updated January 14, 2026
 
 ## Summary
 Hello World! 
@@ -14,10 +14,11 @@ I would appreciate any feedback you might have about my [website](https://victor
 
 ## Technologies
 - [Angular](https://angular.dev) (*v15.2.0*)
-- [TypeScript](https://www.typescriptlang.org) (*v4.9.4*)
-- [Tailwind CSS](https://tailwindcss.com) (*v3.4.17*)
-- [Lucide Angular](https://lucide.dev/guide/packages/lucide-angular) (*v0.471.0*)
+- [Devicon](https://devicon.dev) (*v2.17.0*)
 - [EmailJS](https://www.emailjs.com) (*v3.11.0*)
+- [Lucide Angular](https://lucide.dev/guide/packages/lucide-angular) (*v0.471.0*)
+- [Tailwind CSS](https://tailwindcss.com) (*v3.4.17*)
+- [TypeScript](https://www.typescriptlang.org) (*v4.9.4*)
 
 ## Screenshots
 ### Desktop View
