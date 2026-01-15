@@ -14,7 +14,7 @@ export class MyArcadeComponent {
       tech: ["react", "typescript", "bootstrap"],
       description: `Challenge a friend in this fast-paced Tic-Tac-Toe duel 
                     and see who can claim victory first!`,
-      url: "https://tic-tac-toe.victor-jr.com",
+      url: "https://vichdz97.github.io/arcade/tic-tac-toe",
       github: "https://github.com/vichdz97/tic-tac-toe"
     },
     {
@@ -22,7 +22,7 @@ export class MyArcadeComponent {
         img: "flip-n-match.png",
         tech: ["html5", "css3", "javascript"],
         description: `Try and beat the clock in this interactive card matching game!`,
-        url: "https://flip-n-match.victor-jr.com",
+        url: "https://vichdz97.github.io/arcade/flip-n-match",
         github: "https://github.com/vichdz97/flip-n-match"
     }
   ];

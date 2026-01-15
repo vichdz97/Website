@@ -23,7 +23,7 @@ export class MyProjectsComponent {
       tech: ["openweatherapi", "react", "typescript", "tailwindcss"],
       description: `An intuitive weather app inspired by Apple's weather interface, 
                     providing real-time forecasts and detailed weather information.`,
-      url: "https://weather-app.victor-jr.com",
+      url: "https://vichdz97.github.io/projects/weather-app",
       github: "https://github.com/vichdz97/weather-app"
     }
   ];

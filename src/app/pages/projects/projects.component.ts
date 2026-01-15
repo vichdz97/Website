@@ -25,7 +25,7 @@ export class ProjectsComponent implements OnInit {
       tech: ["openweatherapi", "react", "typescript", "tailwindcss"],
       description: `An intuitive weather app inspired by Apple's weather interface, 
                     providing real-time forecasts and detailed weather information.`,
-      url: "https://weather-app.victor-jr.com",
+      url: "https://vichdz97.github.io/projects/weather-app",
       github: "https://github.com/vichdz97/weather-app"
     },
     {
@@ -34,7 +34,7 @@ export class ProjectsComponent implements OnInit {
       tech: ["pokeapi", "react", "typescript", "bootstrap"],
       description: `Unleash any Pokémon with this random generator 
                     that reveals its sprite and game stats.`,
-      url: "https://pokemon-generator.victor-jr.com",
+      url: "https://vichdz97.github.io/projects/pokemon-generator",
       github: "https://github.com/vichdz97/pokemon-generator"
     },
     {
@@ -43,7 +43,7 @@ export class ProjectsComponent implements OnInit {
       tech: ["react", "typescript", "bootstrap"],
       description: `A simple calculator app that performs various
                     mathematical operations.`,
-      url: "https://calculator-app.victor-jr.com",
+      url: "https://vichdz97.github.io/projects/calculator-app",
       github: "https://github.com/vichdz97/react-calculator"
     }
   ];
