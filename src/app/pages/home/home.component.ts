@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
@@ -8,7 +9,9 @@ import { NavigationService } from 'src/app/services/navigation.service';
 })
 export class HomeComponent implements OnInit {
 
-    constructor(private nav: NavigationService) {}
+    constructor(private titleService: Title, private nav: NavigationService) {
+        this.titleService.setTitle("Victor Hernandez, Jr. | Home");
+    }
 
     ngOnInit(): void {
         this.nav.activeLink = "home";
