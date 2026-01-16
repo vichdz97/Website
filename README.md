@@ -10,7 +10,7 @@ My website is a great place to check out projects that I've worked on that have 
 Feel free to reach out if you'd love to collab on a future project!
 
 ## Live Demo
-I would appreciate any feedback you might have about my [website](https://victor-jr.com/). (:
+I would appreciate any feedback you might have about my [website](https://vichdz97.github.io/). (:
 
 ## Technologies
 - [Angular](https://angular.dev) (*v15.2.0*)
