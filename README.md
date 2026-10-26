@@ -1,6 +1,6 @@
 # My Website Portfolio
 > [!NOTE]
-> Last updated January 14, 2026
+> Last updated Ocotber 26, 2026
 
 ## Summary
 Hello World! 
