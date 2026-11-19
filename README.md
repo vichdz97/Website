@@ -1,6 +1,6 @@
 # My Website Portfolio
 > [!NOTE]
-> Last updated Ocotber 26, 2026
+> Last updated November 18, 2026
 
 ## Summary
 Hello World! 
@@ -14,6 +14,7 @@ I would appreciate any feedback you might have about my [website](https://vichdz
 
 ## Technologies
 - [Angular](https://angular.dev) (*v15.2.0*)
+- [Aura Gradients](https://auragradients.vercel.app/) (*v1.0.0*)
 - [Devicon](https://devicon.dev) (*v2.17.0*)
 - [EmailJS](https://www.emailjs.com) (*v3.11.0*)
 - [Lucide Angular](https://lucide.dev/guide/packages/lucide-angular) (*v0.471.0*)
