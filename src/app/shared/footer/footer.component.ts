@@ -10,7 +10,7 @@ export class FooterComponent {
 
 	constructor(private nav: NavigationService) {}
 
-	isActive(link: string): string | boolean {
-		return link === this.nav.activeLink && "text-slate-100";
+	isActive(link: string): string | boolean | null {
+		return link === this.nav.activeLink && "bg-sky-200 px-4 py-2 my-2 rounded-full transition-all" || null;
 	}
 }

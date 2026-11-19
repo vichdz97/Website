@@ -1,41 +1,23 @@
 <!-- MOBILE -->
-<div class="block lg:hidden">
-    <nav class="fixed bottom-0 w-full bg-dark-blue/90 backdrop-blur text-slate-400 py-7">
-        <ul class="flex justify-evenly">
-            <li><a class="transition-colors hover:text-slate-100 {{isActive('home')}}" title="Home" routerLink="/home"><lucide-icon name="house" [strokeWidth]="1.5"></lucide-icon></a></li>
-            <li><a class="transition-colors hover:text-slate-100 {{isActive('projects')}}" title="Projects" routerLink="/projects"><lucide-icon name="code" [strokeWidth]="1.5"></lucide-icon></a></li>
-            <li><a class="transition-colors hover:text-slate-100 {{isActive('arcade')}}" title="Arcade" routerLink="/arcade"><lucide-icon name="joystick" [strokeWidth]="1.5"></lucide-icon></a></li>
-            <li><a class="transition-colors hover:text-slate-100 {{isActive('about')}}" title="About Me" routerLink="/about"><lucide-icon name="user-round" [strokeWidth]="1.5"></lucide-icon></a></li>
-            <li><a class="transition-colors hover:text-slate-100" title="Resume" href="assets/pdfs/VictorHernandezJr_Resume.pdf" target="_blank"><lucide-icon name="file-text" [strokeWidth]="1.5"></lucide-icon></a></li>
-        </ul>
-    </nav>
-</div>
+<nav class="lg:hidden w-full fixed bottom-5">
+    <ul class="flex items-center justify-evenly w-5/6 mx-auto rounded-full text-sky-400 bg-sky-300/70 backdrop-blur border border-1 border-sky-200">
+        <li class="{{isActive('home')}}"><a title="Home" routerLink="/home"><lucide-icon name="house" [strokeWidth]="1.5"></lucide-icon></a></li>
+        <li class="{{isActive('projects')}}"><a  title="Projects" routerLink="/projects"><lucide-icon name="code" [strokeWidth]="1.5"></lucide-icon></a></li>
+        <li class="{{isActive('arcade')}}"><a title="Arcade" routerLink="/arcade"><lucide-icon name="joystick" [strokeWidth]="1.5"></lucide-icon></a></li>
+        <li class="{{isActive('about')}}"><a title="About Me" routerLink="/about"><lucide-icon name="user-round" [strokeWidth]="1.5"></lucide-icon></a></li>
+        <li><a title="Resume" href="assets/pdfs/VictorHernandezJr_Resume.pdf" target="_blank"><lucide-icon name="file-text" [strokeWidth]="1.5"></lucide-icon></a></li>
+    </ul>
+</nav>
 
 <!-- DESKTOP -->
-<div class="hidden lg:block bg-slate-100">
-    <footer class="bg-dark-blue/90 text-slate-400 p-10 flex items-center justify-between">
+<footer class="hidden lg:block">
+    <div class="flex items-center justify-between pt-0 px-10 pb-10 text-sky-950">
         <p class="text-sm">&#169; 2026 Victor Hernandez, Jr.</p>
-        <ul class="flex">
-            <li class="ml-10">
-                <a class="transition-colors hover:text-slate-100" title="GitHub" href="https://github.com/vichdz97" target="_blank">
-                    <lucide-icon name="github" [strokeWidth]="1.5" />
-                </a>
-            </li>
-            <li class="ml-10">
-                <a class="transition-colors hover:text-slate-100" title="LinkedIn" href="http://linkedin.com/in/victorhernandezjr/" target="_blank">
-                    <lucide-icon name="linkedin" [strokeWidth]="1.5" />
-                </a>
-            </li>
-            <li class="ml-10">
-                <a class="transition-colors hover:text-slate-100" title="Facebook" href="https://www.facebook.com/victorhernandez97/" target="_blank">
-                    <lucide-icon name="facebook" [strokeWidth]="1.5" />
-                </a>
-            </li>
-            <li class="ml-10">
-                <a class="transition-colors hover:text-slate-100" title="Email" href="mailto:victorhernandezjr97@gmail.com?subject=Connecting with Victor Hernandez, Jr.">
-                    <lucide-icon name="mail" [strokeWidth]="1.5" />
-                </a>
-            </li>
+        <ul class="flex items-center justify-between w-1/6">
+            <li><a class="transition-colors hover:text-sky-500" title="GitHub" href="https://github.com/vichdz97" target="_blank"><lucide-icon name="github" [size]="28" [strokeWidth]="1.5" /></a></li>
+            <li><a class="transition-colors hover:text-sky-500" title="LinkedIn" href="http://linkedin.com/in/victorhernandezjr/" target="_blank"><lucide-icon name="linkedin" [size]="28" [strokeWidth]="1.5" /></a></li>
+            <li><a class="transition-colors hover:text-sky-500" title="Facebook" href="https://www.facebook.com/victorhernandez97/" target="_blank"><lucide-icon name="facebook" [size]="28" [strokeWidth]="1.5" /></a></li>
+            <li><a class="transition-colors hover:text-sky-500" title="Email" href="mailto:victorhernandezjr97@gmail.com?subject=Connecting with Victor Hernandez, Jr."><lucide-icon name="mail" [size]="28" [strokeWidth]="1.5" /></a></li>
         </ul>
-    </footer>
-</div>
+    </div>
+</footer>

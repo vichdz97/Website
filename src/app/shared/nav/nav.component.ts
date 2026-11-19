@@ -11,6 +11,6 @@ export class NavComponent {
   constructor(private nav: NavigationService) {}
 
   isActive(link: string): string | boolean {
-    return link === this.nav.activeLink && "text-slate-100";
+    return link === this.nav.activeLink && "text-sky-500";
   }
 }
