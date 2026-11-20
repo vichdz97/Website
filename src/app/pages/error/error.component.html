@@ -1,6 +1,25 @@
-<div class="h-screen flex flex-col items-center justify-center px-5 text-center text-dark-blue/90 bg-slate-100">
-    <lucide-icon class="mb-1" name="frown" size="50vw" [strokeWidth]="1.5" />
-    <span class="text-5xl md:text-6xl font-medium">Sorry!</span>
-    <span class="text-lg md:text-2xl my-5">The page you're looking for <br class="md:hidden">doesn't exist.</span>
-    <button class="bg-dark-blue/90 text-slate-100 px-5 py-2 rounded-xl lg:bg-transparent lg:text-dark-blue/90 lg:border lg:border-2 lg:border-dark-blue/90 lg:hover:bg-dark-blue/90 lg:hover:text-slate-100 lg:transition-colors" routerLink="/home">Go Home</button>
+<!-- MOBILE -->
+<div class="flex sm:hidden min-h-screen flex-col items-center justify-center gap-5 text-sky-950 text-center">
+    <span class="text-2xl">404 ERROR</span>
+    <div class="relative">
+        <div class="z-[-1] absolute inset-0 bg-[radial-gradient(circle_at_center,_#38bdf8_0%,_#bae6fd_30%,_transparent_70%)] pointer-events-none"></div>
+        <img src="assets/images/robot.png" alt="robot" class="w-[60vw]" />
+    </div>
+    <span class="text-5xl font-bold">Oops!</span>
+    <span class="mx-4">The page you're looking for was probably moved, renamed or doesn't exist.</span>
+    <button class="border border-2 border-sky-950 px-4 py-2 rounded-full hover:bg-sky-950 hover:text-sky-50 hover:scale-[1.1] transition-all">&larr; Back Home</button>
+</div>
+
+<!-- DESKTOP/TABLET -->
+ <div class="hidden sm:flex min-h-screen items-center justify-evenly text-sky-950 text-center">
+    <div class="relative">
+        <div class="z-[-1] absolute inset-0 bg-[radial-gradient(circle_at_center,_#38bdf8_0%,_#bae6fd_30%,_transparent_70%)] pointer-events-none"></div>
+        <img src="assets/images/robot.png" alt="robot" class="w-[30vw]" />
+    </div>
+    <div class="flex flex-col items-center gap-5 w-1/3">
+        <span class="text-2xl">404 ERROR</span>
+        <span class="text-5xl font-bold">Oops!</span>
+        <span class="text-lg">The page you're looking for was probably moved, renamed or doesn't exist.</span>
+        <button class="w-fit border border-2 border-sky-950 px-4 py-2 rounded-full hover:bg-sky-950 hover:text-sky-50 hover:scale-[1.1] transition-all">&larr; Back Home</button>
+    </div>
 </div>
